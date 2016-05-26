@@ -1,0 +1,72 @@
+<extend name="Public/index"/>
+<block name="content">
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">管理员添加</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+     <div class="row">
+	     <div class="col-lg-12">
+	         <div class="panel panel-default">
+	             <div class="panel-heading">
+	                 Basic Form Elements
+	             </div>
+	             <div class="panel-body">
+	                 <div class="row">
+	                     <div class="col-lg-6">
+	                         <form role="form" action="{:U('Admin/Admin/update')}" method="post" enctype="multipart/form-data">
+	                             <div class="form-group">
+                                     <input type="hidden" name="id" value="{$info.id}">
+	                                 <label>管理员</label>
+	                                 <input value="{$info.name}" type="text" name="name" class="form-control">
+	                             </div>
+
+	                             <div class="form-group">
+	                                 <label>密码</label>
+	                                 <input value="{$info.password}" type="password" name="password" placeholder="请输入密码" class="form-control">
+	                             </div>     
+
+	                            <div class="form-group">
+	                                 <label>所有权限</label>
+	                                 <select name="group_id" class="form-control">
+                                      <foreach name="oup" item="v" key="k" > 
+                                      	<if condition="($v.id eq 1) "> 
+                                      	  <else /> 
+                                        <option value="{$v.id}" <if condition="$v.id eq $info['group_id'] "> selected </if> >{$v.title}</option>
+                                      	</if>
+                                      </foreach>
+                                   </select>
+	                             </div>
+
+	                             <div class="form-group">
+	                                 <label>性别</label>
+	                                 <label class="radio-inline">
+	                                     <input type="radio" checked="" value="0" <if condition="$info['sex'] eq 0"> checked</if> id="optionsRadiosInline1" name="sex">女
+	                                 </label>
+	                                 <label class="radio-inline">
+	                                     <input type="radio" value="1" <if condition="$info['sex'] eq 1"> checked</if> id="optionsRadiosInline2" name="sex">男
+	                                 </label>
+	                                 <label class="radio-inline">
+	                                     <input type="radio" value="2" <if condition="$info['sex'] eq 2"> checked</if> id="optionsRadiosInline3" name="sex">不详
+	                                 </label>
+	                             </div>
+
+	                             <button class="btn btn-info" type="submit">提交</button>
+	                             <button class="btn btn-warning" type="reset">重置</button>
+	                         </form>
+	                     </div>
+	                     <!-- /.col-lg-6 (nested) -->
+	                     
+	                 </div>
+	                 <!-- /.row (nested) -->
+	             </div>
+	             <!-- /.panel-body -->
+	         </div>
+	         <!-- /.panel -->
+	     </div>
+	     <!-- /.col-lg-12 -->
+	 </div>
+</div>
+</block>

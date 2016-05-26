@@ -1,0 +1,91 @@
+<extend name="Public/index"/>
+<block name="content">
+  <div id="page-wrapper">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">商品{$title}图片</h1>
+      </div>
+      <div class="col-lg-12">
+        <form role="form" action="{:U('Admin/Goods/imginsert')}" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label>添加图片</label>
+                <input type="hidden" name="gid" value="{$gid}">
+                <input name="pic" type="file">
+                <button class="btn btn-info" type="submit">提交</button>
+            </div>
+        </form>
+      </div>
+      <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <!-- DataTables Advanced Tables -->
+          </div>
+          <!-- /.panel-heading -->
+          <div class="panel-body">
+            <div class="dataTable_wrapper">
+              <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                  <div class="row">
+                    <foreach name ="res" item="vo" key="k">
+                      <div class="col-xs-6 col-md-3" id="del">
+                        <label href="#" class="thumbnail">
+                          <img src="{$vo.pic}">  
+                        </label>
+                        <laber class="btn btn-primary">
+                           <if condition="($vo.lover eq 0) "> 
+                                  封面
+                                  <else /> 
+                                  非封面
+                            </if>
+                        </laber>
+                        <if condition="$vo.lover eq 0">
+                        <else /> <a href="{:U('Admin/Goods/imgswfm',array('gid'=>$gid,'id'=>$vo['id']))}" class="btn btn-warning">设为封面</a>
+                        </if>
+                        <if condition="($vo.lover eq 0) "> 
+                                  <else /> 
+                                  <button class="btn btn-danger btn-del" type="button" num="{$vo.id}">删除</button>
+                            </if>
+                      </div>
+                    </foreach>
+                  </div><!-- end row -->
+                  
+              </div>
+            </div>
+            <!-- /.table-responsive -->
+
+          </div>
+          <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+      </div>
+      <!-- /.col-lg-12 -->
+    </div>
+  </div>
+
+  <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    //绑定单击事件
+    $('.btn-del').live('click',function(){
+      // alert('222');
+
+      //获取id
+      var id = $(this).attr('num');
+      var url = "{:U('Admin/Goods/ajaxdel')}";
+      // alert(url);
+      var btn = $(this).parents('#del');
+      //ajax
+      $.get(url,{id:id},function(data){
+        // console.log(data);
+        if(data == 1){
+          // alert('成功');
+         btn.remove();
+        }else{
+          alert('失败');
+        }
+      })
+
+    })
+  </script>
+</block>

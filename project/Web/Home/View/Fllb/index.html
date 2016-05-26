@@ -1,0 +1,728 @@
+﻿<extend name="Public/default" />
+    <block name="top">
+    <meta charset="utf-8">
+    <title>国产水果_优质新鲜苹果在线购买_新鲜水果网上订购_易果生鲜Yiguo官网</title>
+    <meta name="Keywords" content="水果,进口水果,国产水果,蔬菜,肉类,海鲜,禽蛋,粮油,甜点,葡萄酒,易果网">
+    <meta name="Description" content="易果生鲜Yiguo网是专业的进口生鲜水果食品网络购物平台，在这里您可以购买到精心挑选的优质健康易果苹果，最新价格、优惠促销、实物图片等信息尽在易果网yiguo.com。">
+    <meta property="qc:admins" content="15753240576117576375" />
+    <link rel="shortcut icon" href="http://static01.yiguo.com/common/images/yiguo.ico"/>
+    <link rel="dns-prefetch" href="//img01.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img02.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img03.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img04.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img05.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img06.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img07.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img08.yiguoimg.com" />
+    <link href="__PUBLIC__/Home/Fllb/Content/public.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/Fllb/Content/customer.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/Fllb/Content/pageguide.css" rel="stylesheet" type="text/css">
+
+    
+    <link href="__PUBLIC__/Home/Fllb/Content/goods_list.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/Fllb/Content/product_detail.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/Fllb/Content/yiguo.css" rel="stylesheet" type="text/css">
+    </block>
+    <block name="javascript">
+    <!--IE6png兼容-->
+    <!--[if IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/Home/Fllb/Scripts/dd_belatedpng.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/Fllb/Scripts/ie6_loading.js"></script>
+    <![endif]-->
+
+
+    <script src="__PUBLIC__/Home/Fllb/Scripts/jquery.js"></script>
+    <script>
+        yg_x = new Date();
+    </script>
+    <script type="text/javascript">
+        var _bdhm_top = 0;
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        var _bdhm_tim = new Image(1, 1);
+        _bdhm_tim.id = "bdhmPerimg";
+        _bdhm_tim.src = _bdhmProtocol + "hm.baidu.com/_tt.gif?si=36a486fbdec46fc52ca666dd2e98f260&rnd=" + Math.round(Math.random() * 2147483647);
+        _bdhm_tim.onload = function () { _bdhm_top = 1; }
+    </script>
+    <!-- start Dplus -->
+    <script type="text/javascript">!function (a, b) { if (!b.__SV) { var c, d, e, f; window.dplus = b, b._i = [], b.init = function (a, c, d) { function g(a, b) { var c = b.split("."); 2 == c.length && (a = a[c[0]], b = c[1]), a[b] = function () { a.push([b].concat(Array.prototype.slice.call(arguments, 0))) } } var h = b; for ("undefined" != typeof d ? h = b[d] = [] : d = "dplus", h.people = h.people || [], h.toString = function (a) { var b = "dplus"; return "dplus" !== d && (b += "." + d), a || (b += " (stub)"), b }, h.people.toString = function () { return h.toString(1) + ".people (stub)" }, e = "disable track track_links track_forms register unregister get_property identify clear set_config get_config get_distinct_id track_pageview register_once track_with_tag time_event people.set people.unset people.delete_user".split(" "), f = 0; f < e.length; f++) g(h, e[f]); b._i.push([a, c, d]) }, b.__SV = 1.1, c = a.createElement("script"), c.type = "text/javascript", c.charset = "utf-8", c.async = !0, c.src = "//w.cnzz.com/dplus.php?token=1915ef989c5aence66fa", d = a.getElementsByTagName("script")[0], d.parentNode.insertBefore(c, d) } }(document, window.dplus || []), dplus.init("1915ef989c5aence66fa");</script><!-- end Dplus -->
+    <script src="__PUBLIC__/Home/Fllb/Scripts/topdsp.js"></script>
+    </block>
+
+    <block name="content">
+        <div class="header clearfix">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="http://www.yiguo.com"></a>
+                </div>
+                <!--搜索 开始-->
+                <div class="search" style="position:relative;">
+                    <div class="search-bar clearfix">
+                        <input type="text" id="keyword" name="keyword" class="search-input" value="输入商品名／编号／拼音" onfocus=" if (this.value == '输入商品名／编号／拼音') {this.value = '';this.style.color = '#000';} " onblur=" if (this.value == '') {this.value = '输入商品名／编号／拼音';this.style.color = '#999';} " style="color: rgb(153, 153, 153);">
+                        <input class="search-btn" type="submit" value="搜索">
+                    </div>
+                    <ul class="hide" id="shelper" style="display: none;"></ul>
+                    <div class="search-keywords" id="keywords">
+                        <script id="keywordstpl" type="text/x-handlebars-template">
+                            {{#KeyWords}}
+                            {{#equal IsImportant true}}
+                            <a href="{{Link}}" class="hot" target="_blank">{{Text}}</a>
+                            {{else}}
+                            <a href="{{Link}}" target="_blank">{{Text}}</a>
+                            {{/equal}}
+                            {{/KeyWords}}
+                        </script>
+                    </div>
+                </div>
+                <!--购物车 开始-->
+                <div class="shopping-cart">
+    <dl>
+        <dt class="shopping-btn"><a href="http://cart.yiguo.com/"> <span class="totleNum"><b>0</b></span><b class="totlePrice">0.0</b></a></dt>
+        <dd class="shopping-list">
+            <div class="spacer"></div>
+            <div class="nogoods" style="display:none;">
+                购物车中还没有商品，赶紧选购吧！
+            </div>
+            <div class="goods">
+                <p id="deliveryType" style="display:none;">满100元包邮！</p>
+                <ul></ul>
+                <div class="price-total">
+                    <div><span class="totleNum">共<b>0</b>件商品</span><span>共计<b class="totlePrice">¥0.00</b></span></div>
+                    <div><a href="http://cart.yiguo.com/" class="settleup">去购物车</a></div>
+                </div>
+            </div>
+        </dd>
+    </dl>
+</div>
+                <!--购物车 结束-->
+            </div>
+        </div>
+
+        
+
+
+<div class="header-nav">
+    <div class="wrap">
+        <!--商品分类 开始-->
+        <div class="catalogs">
+            <div class="catalogs-title"><a href="javascript:;">全部商品分类▼</a></div>
+            <div class="catalogs-list" id="_categry" style="display:none;">
+                <script id="_categorytpl" type="text/x-handlebars-template">
+    {{#each Catrgories}}
+    <div class="item">
+        <h3 class="t{{CategoryCode}}"><a href="http://www.yiguo.com/products/{{CategoryCode}}.html"><i></i>{{CategoryName}}<s>&gt;</s></a></h3>
+        <div class="sub-item" style="display: none;">
+            <h4><a href="http://www.yiguo.com/products/{{CategoryCode}}.html" > {{CategoryName}}</a></h4>
+            <div class="sub-list">
+                {{#if SubCategory2}}
+                {{#each SubCategory2}}
+                <a href="http://www.yiguo.com/products/{{CategoryCode}}.html" target="_blank">{{CategoryName}}</a>
+                {{/each}}
+                {{/if}}
+
+                {{#if SubCategory1}}
+                {{#each SubCategory1}}
+                <a href="http://www.yiguo.com/products/{{CategoryCode}}.html" target="_blank">{{CategoryName}}</a>
+                {{/each}}
+                {{/if}}
+
+                {{#if SubCategory0}}
+                {{#each SubCategory0}}
+                <a href="http://www.yiguo.com/products/{{CategoryCode}}.html" target="_blank">{{CategoryName}}</a>
+                {{/each}}
+                {{/if}}
+
+            </div>
+            <div class="catalogs-ad">
+                {{#each CategoryImageAd}}
+                <a href="{{Link}}"><img src="__PUBLIC__/Home/Fllb/Picture/eed2cc7dbf554d11a74dea541db1d7a7.gif"></a>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+</script>
+
+            </div>
+        </div>
+        <!--商品分类 结束-->
+        <div class="nav-items">
+            <ul id="homenav">
+                <script id="homenavtpl" type="text/x-handlebars-template">
+                    {{#HomeNav}}
+                    <li><a href="{{Link}}" target="_blank">{{Text}}</a></li>
+                    {{/HomeNav}}
+                 </script>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="wrap">
+    <!--广告位-->
+    <div class="page_ad clearfix">
+                <a class="big" href="http://www.yiguo.com/products/0202_li.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/9288693964677286.jpg" width="1200" height="300"></a>
+                        <a class="medium mr" href="http://search.yiguo.com/?keyword=%E6%B5%B7%E5%8D%97%E6%B0%B4%E6%9E%9C" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/9288691991748665.jpg" width="405" height="180"></a>
+                <a class="medium mr" href="http://search.yiguo.com/?keyword=%E5%8F%B0%E6%B9%BE%E6%B0%B4%E6%9E%9C" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/9288691927883830.jpg" width="405" height="180"></a>
+                <a class="small mr" href="http://www.yiguo.com/products/0212_mangguo.html#formCx" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/9288692452859986.jpg" width="180" height="180"></a>
+                <a class="small" href="http://www.yiguo.com/products/0201_pingguo.html#formCx" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/9288693627756693.jpg" width="180" height="180"></a>
+    </div>
+    <!--筛选-->
+    <div class="select">
+        
+    <div class="all clearfix">
+        <div class="tit">►所有分类</div>
+        <ul>
+                <li class="current "><a href="http://www.yiguo.com/products/0201_pingguo.html">苹果</a></li>
+                <li class=" "><a href="http://www.yiguo.com/products/0202_li.html">梨</a></li>
+                <li class=" "><a href="http://www.yiguo.com/products/0203_yingtao.html">樱桃</a></li>
+                <li class=" "><a href="http://www.yiguo.com/products/0204_ganjuchengyou.html">柑桔橙柚</a></li>
+                <li class=" "><a href="http://www.yiguo.com/products/0206_gua.html">瓜</a></li>
+                <li class=" "><a href="http://www.yiguo.com/products/0207_putao.html">葡萄</a></li>
+                <li class=" "><a href="http://www.yiguo.com/products/0211_mei.html">莓</a></li>
+                <li class=" "><a href="http://www.yiguo.com/products/0212_mangguo.html">芒果</a></li>
+                <li class=" "><a href="http://www.yiguo.com/products/0213_fengli.html">凤梨</a></li>
+                <li class=" "><a href="http://www.yiguo.com/products/0214_lianwu.html">莲雾</a></li>
+                <li class=" "><a href="http://www.yiguo.com/products/0216_baixiangguo.html">百香果</a></li>
+                <li class=" "><a href="http://www.yiguo.com/products/0217_tropical.html">热带水果</a></li>
+                <li class=" "><a href="http://www.yiguo.com/products/0218_season.html">时令水果</a></li>
+                <li class=" last"><a href="http://www.yiguo.com/products/0219_yuanxiang.html">原箱水果</a></li>
+        </ul>
+    </div>
+
+
+        
+
+
+    </div>
+    <!--排序-->
+    <div id="formCx" class="filter clearfix">
+        <div class="filter_sort">
+                <a class="on" href="javascript:;" _sort="0">默认排序</a>
+                <a class="" href="javascript:;" _sort="1">销量<i class="dowm"></i></a>
+                <a class="price" href="javascript:;" _sort="3">价格<i class="sort_down"></i></a>
+                <a class="" href="javascript:;" _sort="5">评论<i class="dowm"></i></a>
+                                                        </div>
+    </div>
+    <div class="filter_space"></div>
+    <!--商品列表-->
+    <div class="goods_list clearfix" _category="0201_pingguo" _page="2" _end="false" _maxpage="2">
+        <ul>
+                    <li class="product_item j_product" _type="0">
+                        <div class="p_img clearfix">
+
+                            <a href="http://www.yiguo.com/product/61908.html" target="_blank">
+                                    <img src="__PUBLIC__/Home/Fllb/Picture/151010135431546_61908_300.jpg" width="290" height="290" class="j_product_img">
+
+                            </a>
+                        </div>
+                        <div class="p_info clearfix">
+                            <div class="p_name"><a href="http://www.yiguo.com/product/61908.html" target="_blank">山东蓬莱精品红富士2.5kg果径80-85mm</a></div>
+                            <div class="p_price">
+                                <span class="price">
+                                    <strong>¥49.00</strong>
+                                        <del>¥58.00</del>
+                                </span>
+                                                            </div>
+                        </div>
+                        <div class="p-buy">
+                            <span></span>
+
+                                        <a class="btn-buy" href="javascript:;" onclick="G.app.cart.module.addToCart(this,'61908',1,app.referCart);">加入购物车</a>
+                        </div>
+                    </li>
+                    <li class="product_item j_product" _type="0">
+                        <div class="p_img clearfix">
+
+                            <a href="http://www.yiguo.com/product/61909.html" target="_blank">
+                                    <img src="__PUBLIC__/Home/Fllb/Picture/151010135434566_61909_300.jpg" width="290" height="290" class="j_product_img">
+
+                            </a>
+                        </div>
+                        <div class="p_info clearfix">
+                            <div class="p_name"><a href="http://www.yiguo.com/product/61909.html" target="_blank">山东蓬莱精品红富士5kg果径80-85mm</a></div>
+                            <div class="p_price">
+                                <span class="price">
+                                    <strong>¥109.00</strong>
+                                </span>
+                                                            </div>
+                        </div>
+                        <div class="p-buy">
+                            <span></span>
+
+                                        <a class="btn-buy" href="javascript:;" onclick="G.app.cart.module.addToCart(this,'61909',1,app.referCart);">加入购物车</a>
+                        </div>
+                    </li>
+                    <li class="product_item j_product" _type="0">
+                        <div class="p_img clearfix">
+
+                            <a href="http://www.yiguo.com/product/12536.html" target="_blank">
+                                    <img src="__PUBLIC__/Home/Fllb/Picture/151010145606378_12536_300.jpg" width="290" height="290" class="j_product_img">
+
+                            </a>
+                        </div>
+                        <div class="p_info clearfix">
+                            <div class="p_name"><a href="http://www.yiguo.com/product/12536.html" target="_blank">陕西精品红富士5kg果径80-85mm</a></div>
+                            <div class="p_price">
+                                <span class="price">
+                                    <strong>¥89.00</strong>
+                                </span>
+                                                            </div>
+                        </div>
+                        <div class="p-buy">
+                            <span></span>
+
+                                        <a class="btn-buy" href="javascript:;" onclick="G.app.cart.module.addToCart(this,'12536',1,app.referCart);">加入购物车</a>
+                        </div>
+                    </li>
+                    <li class="product_item j_product" _type="0">
+                        <div class="p_img clearfix">
+
+                            <a href="http://www.yiguo.com/product/10498.html" target="_blank">
+                                    <img src="__PUBLIC__/Home/Fllb/Picture/151010145603102_10498_300.jpg" width="290" height="290" class="j_product_img">
+
+                            </a>
+                        </div>
+                        <div class="p_info clearfix">
+                            <div class="p_name"><a href="http://www.yiguo.com/product/10498.html" target="_blank">陕西精品红富士2.5kg果径80-85mm</a></div>
+                            <div class="p_price">
+                                <span class="price">
+                                    <strong>¥48.00</strong>
+                                </span>
+                                                            </div>
+                        </div>
+                        <div class="p-buy">
+                            <span></span>
+
+                                        <a class="btn-buy" href="javascript:;" onclick="G.app.cart.module.addToCart(this,'10498',1,app.referCart);">加入购物车</a>
+                        </div>
+                    </li>
+                    <li class="product_item j_product" _type="0">
+                        <div class="p_img clearfix">
+
+                            <a href="http://www.yiguo.com/product/12333.html" target="_blank">
+                                    <img src="__PUBLIC__/Home/Fllb/Picture/151010142843688_12333_300.jpg" width="290" height="290" class="j_product_img">
+
+                            </a>
+                        </div>
+                        <div class="p_info clearfix">
+                            <div class="p_name"><a href="http://www.yiguo.com/product/12333.html" target="_blank">甘肃黄蕉苹果3kg（170g/个，+/-10g）</a></div>
+                            <div class="p_price">
+                                <span class="price">
+                                    <strong>¥70.00</strong>
+                                </span>
+                                                            </div>
+                        </div>
+                        <div class="p-buy">
+                            <span></span>
+
+                                        <a class="btn-buy" href="javascript:;" onclick="G.app.cart.module.addToCart(this,'12333',1,app.referCart);">加入购物车</a>
+                        </div>
+                    </li>
+                    <li class="product_item j_product" _type="0">
+                        <div class="p_img clearfix">
+
+                            <a href="http://www.yiguo.com/product/12968.html" target="_blank">
+                                    <img src="__PUBLIC__/Home/Fllb/Picture/151117172523202_12968_300.jpg" width="290" height="290" class="j_product_img">
+
+                            </a>
+                        </div>
+                        <div class="p_info clearfix">
+                            <div class="p_name"><a href="http://www.yiguo.com/product/12968.html" target="_blank">甘肃静宁特级有机苹果12个</a></div>
+                            <div class="p_price">
+                                <span class="price">
+                                    <strong>¥75.00</strong>
+                                </span>
+                                                            </div>
+                        </div>
+                        <div class="p-buy">
+                            <span></span>
+
+                                        <a class="btn-buy" href="javascript:;" onclick="G.app.cart.module.addToCart(this,'12968',1,app.referCart);">加入购物车</a>
+                        </div>
+                    </li>
+                    <li class="product_item j_product" _type="0">
+                        <div class="p_img clearfix">
+
+                            <a href="http://www.yiguo.com/product/12969.html" target="_blank">
+                                    <img src="__PUBLIC__/Home/Fllb/Picture/151117172522136_12969_300.jpg" width="290" height="290" class="j_product_img">
+
+                            </a>
+                        </div>
+                        <div class="p_info clearfix">
+                            <div class="p_name"><a href="http://www.yiguo.com/product/12969.html" target="_blank">甘肃静宁一级有机苹果12个</a></div>
+                            <div class="p_price">
+                                <span class="price">
+                                    <strong>¥65.00</strong>
+                                </span>
+                                                            </div>
+                        </div>
+                        <div class="p-buy">
+                            <span></span>
+
+                                        <a class="btn-buy" href="javascript:;" onclick="G.app.cart.module.addToCart(this,'12969',1,app.referCart);">加入购物车</a>
+                        </div>
+                    </li>
+                    <li class="product_item j_product" _type="0">
+                        <div class="p_img clearfix">
+
+                            <a href="http://www.yiguo.com/product/12561.html" target="_blank">
+                                    <img src="__PUBLIC__/Home/Fllb/Picture/151010135402568_12561_300.jpg" width="290" height="290" class="j_product_img">
+
+                            </a>
+                        </div>
+                        <div class="p_info clearfix">
+                            <div class="p_name"><a href="http://www.yiguo.com/product/12561.html" target="_blank">山东栖霞优质红富士2.2kg果径约85mm</a></div>
+                            <div class="p_price">
+                                <span class="price">
+                                    <strong>¥49.00</strong>
+                                </span>
+                                                            </div>
+                        </div>
+                        <div class="p-buy">
+                            <span>香脆甜嫩，色泽靓丽<br>包装精美，贺年佳品</span>
+
+                                        <a class="btn-buy" href="javascript:;" onclick="G.app.cart.module.addToCart(this,'12561',1,app.referCart);">加入购物车</a>
+                        </div>
+                    </li>
+                    <li class="product_item j_product" _type="0">
+                        <div class="p_img clearfix">
+
+                            <a href="http://www.yiguo.com/product/12332.html" target="_blank">
+                                    <img src="__PUBLIC__/Home/Fllb/Picture/151010142840285_12332_300.jpg" width="290" height="290" class="j_product_img">
+
+                            </a>
+                        </div>
+                        <div class="p_info clearfix">
+                            <div class="p_name"><a href="http://www.yiguo.com/product/12332.html" target="_blank">甘肃黄蕉苹果1kg（170g/个，+/-10g）</a></div>
+                            <div class="p_price">
+                                <span class="price">
+                                    <strong>¥25.00</strong>
+                                </span>
+                                                            </div>
+                        </div>
+                        <div class="p-buy">
+                            <span>香甜粉糯，味美清甜</span>
+
+                                        <a class="btn-buy" href="javascript:;" onclick="G.app.cart.module.addToCart(this,'12332',1,app.referCart);">加入购物车</a>
+                        </div>
+                    </li>
+        </ul>
+    </div>
+</div>
+
+<input type="hidden" value="0" name="productType" id="productType" />
+
+
+<div class="modal cake" style="display:none;" id="cakeparts">
+    <div class="modal-content">
+        <div class="modal-header"><i></i>请选择蛋糕配件</div>
+        <div class="modal-body">
+            <div class="cakemodal-tab">
+                <ul class="cakemodal-ul">
+                        <li class="chocolate active"><a href="javascript:void(0);"><i></i>巧克力牌</a></li>
+                         <li class="candle"><a href="javascript:void(0);"><i></i>蜡烛</a></li>
+                                            <li class="cutlery"><a href="javascript:void(0);"><i></i>餐具</a></li>
+                         <li class="bags"><a href="javascript:void(0);"><i></i>保温袋</a></li>
+                </ul>
+            </div>
+            <div class="cakemodal-content">
+                    <div class="cakemodal-item" style="display: block;" _type="G00">
+                        <p>每份蛋糕免费赠送一枚巧克力牌，不可另买。</p>
+                        <div class="cakemodal-list clearfix">
+                            <ul>
+                                    <li class="product">
+                                        <div class="img"><img src="__PUBLIC__/Home/Fllb/Picture/121206163148775.jpg" width="70" height="70"></div>
+                                        <div class="name">节日快乐 巧克力牌</div>
+                                        <div class="number"><a class="number-reduce">-</a>
+                                            <input class="number-input" type="text" readonly="readonly" value="0" _type="G00" _data="fb06e587-a784-4a62-9674-aab0ff308dac">
+                                        <a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><img src="__PUBLIC__/Home/Fllb/Picture/121206163246671.jpg" width="70" height="70"></div>
+                                        <div class="name">Happy Birthday巧克力牌</div>
+                                        <div class="number"><a class="number-reduce">-</a>
+                                            <input class="number-input" type="text" readonly="readonly" value="0" _type="G00" _data="6a36f93b-f97c-46f8-8e8b-6febb0821546">
+                                        <a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><img src="__PUBLIC__/Home/Fllb/Picture/121206163234053.jpg" width="70" height="70"></div>
+                                        <div class="name">永远幸福 巧克力牌</div>
+                                        <div class="number"><a class="number-reduce">-</a>
+                                            <input class="number-input" type="text" readonly="readonly" value="0" _type="G00" _data="4e5028f5-2b08-4c61-9537-758176ae7f91">
+                                        <a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><img src="__PUBLIC__/Home/Fllb/Picture/121206163143547.jpg" width="70" height="70"></div>
+                                        <div class="name">生日快乐 巧克力牌</div>
+                                        <div class="number"><a class="number-reduce">-</a>
+                                            <input class="number-input" type="text" readonly="readonly" value="0" _type="G00" _data="50374e31-73a2-4bab-8a77-ae3453599ad9">
+                                        <a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><img src="__PUBLIC__/Home/Fllb/Picture/121206163226145.jpg" width="70" height="70"></div>
+                                        <div class="name">我爱你 巧克力牌</div>
+                                        <div class="number"><a class="number-reduce">-</a>
+                                            <input class="number-input" type="text" readonly="readonly" value="0" _type="G00" _data="4902cd59-d37d-4a23-9590-dde5310ed511">
+                                        <a class="number-add">+</a></div>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                                    <div class="cakemodal-item" style="display: none;" _type="G01">
+                        <p></p>
+                        <div class="cakemodal-list clearfix">
+                            <ul>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317012.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010144012651_317012_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317012.html" target="_blank">细罗纹蜡烛</a></div>
+                                        <div class="price">¥2.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G01" _data="ffea8b51-2980-4074-b710-2e3a3a01fbc9"><a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317461.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010135946684_317461_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317461.html" target="_blank">数字蜡烛（数字0）</a></div>
+                                        <div class="price">¥2.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G01" _data="3fa19572-3455-4846-bb92-6fa988ea9974"><a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317462.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010135948345_317462_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317462.html" target="_blank">数字蜡烛（数字1）</a></div>
+                                        <div class="price">¥2.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G01" _data="a1f8e34c-4a74-4aa8-a8a8-d19c3f820b03"><a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317463.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010135950095_317463_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317463.html" target="_blank">数字蜡烛（数字2）</a></div>
+                                        <div class="price">¥2.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G01" _data="f5367e60-e985-4245-b452-5e3d639c0436"><a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317464.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010135952166_317464_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317464.html" target="_blank">数字蜡烛（数字3）</a></div>
+                                        <div class="price">¥2.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G01" _data="a4b42daa-82a0-47d6-9341-8e3c69d78f27"><a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317465.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010135954022_317465_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317465.html" target="_blank">数字蜡烛（数字4）</a></div>
+                                        <div class="price">¥2.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G01" _data="e95f05a7-9feb-42b2-b2bb-62b35d9bec4b"><a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317466.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010135955847_317466_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317466.html" target="_blank">数字蜡烛（数字5）</a></div>
+                                        <div class="price">¥2.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G01" _data="e1900b89-bb7d-41bf-bbc2-c1c01c927a1c"><a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317067.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010135957709_317067_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317067.html" target="_blank">数字蜡烛（数字6）</a></div>
+                                        <div class="price">¥2.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G01" _data="05d25079-5307-4d30-bc2a-0a77e16925c8"><a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317068.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010135959642_317068_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317068.html" target="_blank">数字蜡烛（数字7）</a></div>
+                                        <div class="price">¥2.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G01" _data="30f93b39-7667-4b84-9cec-6e201f14b066"><a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317069.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010140001439_317069_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317069.html" target="_blank">数字蜡烛（数字8）</a></div>
+                                        <div class="price">¥2.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G01" _data="92d116a9-1cba-44c9-9a76-22454311d730"><a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317015.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010140003401_317015_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317015.html" target="_blank">数字蜡烛（数字9）</a></div>
+                                        <div class="price">¥2.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G01" _data="0f6ea352-0ce7-4195-873b-7f0cee184055"><a class="number-add">+</a></div>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                                    <div class="cakemodal-item" style="display: none;">
+                        <p>1磅及1.5磅蛋糕送4份餐具1把竹刀； 2.5磅蛋糕送8份餐具1把竹刀； 3.5磅蛋糕送12份餐具1把竹刀。 如需额外的配件，请在下面选择。</p>
+                        <div class="cakemodal-list clearfix">
+                            <ul>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317031.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010145708922_317031_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317031.html" target="_blank">餐具</a></div>
+                                        <div class="price">¥2.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G03" _data="578aca52-1084-47a7-9fd6-fb3c74dd4398"><a class="number-add">+</a></div>
+                                    </li>
+                                                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317041.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010144820150_317041_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317041.html" target="_blank">蛋糕刀</a></div>
+                                        <div class="price">¥5.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G04" _data="4a1810ef-976f-4f21-aa7a-d61bf15ef7eb"><a class="number-add">+</a></div>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                                    <div class="cakemodal-item" style="display: none;">
+                        <p>蛋糕配送时有一次性保温袋包装，如需购买环保保温拎包请在下方选择。</p>
+                        <div class="cakemodal-list clearfix">
+                            <ul>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317024.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010133318847_317024_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317024.html" target="_blank">保温拎包A（适合1磅或1.5磅）</a></div>
+                                        <div class="price">¥15.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G02" _data="825a280d-41cb-42c0-ad4d-97d307710250"><a class="number-add">+</a></div>
+                                    </li>
+                                    <li class="product">
+                                        <div class="img"><a href="http://www.yiguo.com/product/317025.html" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/151010133321327_317025_500.jpg" width="70" height="70"></a></div>
+                                        <div class="name"><a href="http://www.yiguo.com/product/317025.html" target="_blank">保温拎包B（适合2.5磅或3.5磅）</a></div>
+                                        <div class="price">¥20.00</div>
+                                        <div class="number"><a class="number-reduce">-</a><input class="number-input" type="text" readonly="readonly" value="0" _type="G02" _data="f02150c9-8335-48c1-b092-7b5c834b251a"><a class="number-add">+</a></div>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            <div class="cakemodal-total clearfix">
+                <p id="tips"></p>
+                <a class="btn-confirm" href="#">确&nbsp;定</a>
+                <a class="btn-cancel" href="#">取&nbsp;消</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-bg">&nbsp;</div>
+</div>
+
+
+
+</block>
+<block name="footer">
+<!------- 页尾 ------->
+<div class="footer">
+    <div class="wrap">
+        <dl class="col1">
+            <dt>新手指南</dt>
+            <dd>
+                <p><a href="/help/registersteps.html">账户注册</a></p>
+                <p><a href="/help/gouwuliucheng.html">购物流程</a></p>
+                <p><a href="/help/ordering.html">订购方式</a></p>
+                <p><a href="/help/ubremark.html">悠币说明</a></p>
+                <p><a href="http://www.yiguo.com/activity_vip.html">会员等级</a></p>
+            </dd>
+        </dl>
+        <dl class="col2">
+            <dt>付款方式</dt>
+            <dd>
+                <p><a href="/help/payment.html">支付方式</a>/<a href="/help/invoiceremark.html">发票说明</a></p>
+                <p><a href="/help/chongzhiliucheng.html">充值说明</a>/<a href="/help/usechuzhika.html">储值卡说明</a></p>
+                <p><a href="/help/usegiftcard.html">优惠代码/礼品卡说明</a></p>
+                <p><a href="/help/cardbuynotes.html">卡券购买章程</a></p>
+            </dd>
+        </dl>
+        <dl class="col3">
+            <dt>配送方式</dt>
+            <dd>
+                <p><a href="/help/sendyuefei.html">配送运费</a></p>
+                <p><a href="/help/sendquyu.html">配送范围</a></p>
+                <p><a href="/help/sendtime.html">配送时间</a></p>
+            </dd>
+        </dl>
+        <dl class="col4">
+            <dt>售后服务</dt>
+            <dd>
+                <p><a href="/help/tuihuanhuoshuoming.html">退换货政策</a></p>
+                <p><a href="/help/huanhuolc.html">退换货流程</a></p>
+                <p><a href="/help/qa.html">常见问题</a></p>
+                <p><a href="http://home.yiguo.com/Trade/Advice">投诉与建议</a></p>
+            </dd>
+        </dl>
+        <dl class="col5">
+            <dt>关于我们</dt>
+            <dd>
+                <p><a href="/help/introduction.html">公司介绍</a></p>
+                <p><a href="/help/contact.html">联系我们</a></p>
+                <p><a href="/help/procooperation.html">业务合作</a></p>
+                <p><a href="/help/chengxinjubao.html">诚信举报</a></p>
+                <p><a href="http://yiguo.zhiye.com/home" target="_blank" rel="nofollow">人才招聘</a></p>
+                <p><a href="/help/friendurl.html">友情链接</a></p>
+                
+            </dd>
+        </dl>
+        <div class="service"><span>客服热线 400-000-7788 企业采购或团购，请转2号键咨询</span><span>周一至周日 9:00-21:00</span></div>
+        <div class="copyright">
+            <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+            <p>沪ICP备09008015号 Copyright © 2005-2016 <a href="http://www.yiguo.com/">上海易果电子商务有限公司</a>版权所有</p>
+            <p class="authentication">
+                <a href="http://shwg.dianping.com/index.html" target="_blank" rel="nofollow"><img src="__PUBLIC__/Home/Fllb/Picture/2517491005058doc.png" height="47"></a>
+                <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20110512114405424" target="_blank"><img src="__PUBLIC__/Home/Fllb/Picture/footer_copy.gif" width="47px" height="47px"></a>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502000002" style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px;"><img src="__PUBLIC__/Home/Fllb/Picture/ghs.png" style="float: left;"/><span style="float: left; height: 20px; line-height: 20px; margin: 0px 0px 0px 5px; color: #939393;">沪公网安备 31010502000002号</span></a>
+
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+        <!------- 侧边悬浮 ------->
+        <div class="sidebar" id="sidebar">
+            <a href="#body" class="s-btn goTop"></a>
+            
+        </div>
+
+    </div>
+     
+    <script src="__PUBLIC__/Home/Fllb/Scripts/jquery.cookie.js"></script>
+    <script src="__PUBLIC__/Home/Fllb/Scripts/handlebars-v3.0.1.js"></script>
+    <script src="__PUBLIC__/Home/Fllb/Scripts/utaste.js"></script>
+    <script src="__PUBLIC__/Home/Fllb/Scripts/base.js"></script>
+    <script src="__PUBLIC__/Home/Fllb/Scripts/jquery.superslide.js"></script>
+    <script src="__PUBLIC__/Home/Fllb/Scripts/sidebar.js"></script>
+    <script src="__PUBLIC__/Home/Fllb/Scripts/floor-guide.js"></script>
+    <script src="__PUBLIC__/Home/Fllb/Scripts/global-v2.js"></script>
+    <script src="__PUBLIC__/Home/Fllb/Scripts/search.js"></script>
+    <script src="__PUBLIC__/Home/Fllb/Scripts/app.js"></script>
+    <script src="__PUBLIC__/Home/Fllb/Scripts/common.js"></script>
+    <script src="__PUBLIC__/Home/Fllb/Scripts/util.js"></script>
+    <script>
+        $(function () {
+            app.init();
+        })
+    </script>
+    <!--yiguoStats-->
+    <script type="text/javascript">
+        var _yaq = _yaq || [];
+        _yaq.push(['_operate', 'view']);
+        _yaq.push(['_site', 'YiGuo']);
+        _yaq.push(['categoryid', '']);
+        _yaq.push(['behaviorid', '']);
+        _yaq.push(['behavior', '']);
+
+        (function () {
+            var ya = document.createElement('script'); ya.type = 'text/javascript'; ya.async = true;
+            ya.src = "http://tracker.yiguo.com/Scripts/yiguoStats.min.js";
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ya, s);
+        })();
+
+    </script>
+  
+    
+    <script src="__PUBLIC__/Home/Fllb/Scripts/goods_list.js"></script>
+    <script>
+        app.waterfull(".goods_list", 0);
+        app.productfilter();
+        app.fixedheader();
+    </script>
+    <script type="text/javascript">
+        var ids = "61908,61909,12536,10498,12333,12968,12969,12561,12332".split(',');
+        window.__zp_tag_params = {
+            pagetype: "category",
+            categoryID: "0201_pingguo",
+            status: (ids.length > 0 && ids[0] != "") ? 1 : 0,
+            productID_list: ids
+        };
+    </script>
+
+
+    <script src="__PUBLIC__/Home/Fllb/Scripts/stats.js"></script>
+    
+    <noscript><img src="__PUBLIC__/Home/Fllb/Picture/adv.gif" style="display:none;" /></noscript>
+</block>

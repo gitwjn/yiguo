@@ -1,0 +1,887 @@
+﻿<extend name="Public/default" />
+    <block name="top">
+    <meta charset="utf-8">
+    <title>莓_精选蓝莓2盒(约125g/盒)0211_mei_莓在线购买_易果生鲜Yiguo官网</title>
+    <meta name="Keywords" content="水果,进口水果,国产水果,蔬菜,肉类,海鲜,禽蛋,粮油,甜点,葡萄酒,易果网">
+    <meta name="Description" content="易果Yiguo的，易果Yiguo生鲜保证送到您手中的每一个精选蓝莓2盒(约125g/盒)皆新鲜美味。">
+    <meta property="qc:admins" content="15753240576117576375" />
+    <link rel="shortcut icon" href="http://static01.yiguo.com/common/images/yiguo.ico"/>
+    <link rel="dns-prefetch" href="//img01.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img02.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img03.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img04.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img05.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img06.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img07.yiguoimg.com" />
+    <link rel="dns-prefetch" href="//img08.yiguoimg.com" />
+    <link href="__PUBLIC__/Home/Index/css/public.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/Xqy/Content/customer.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/Xqy/Content/pageguide.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/Xqy/Content/product_detail.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/Xqy/Content/yiguo.css" rel="stylesheet" type="text/css">
+    </block>
+
+    <block name="javascript">
+    <!--IE6png兼容-->
+    <!--[if IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/Home/Xqy/Scripts/dd_belatedpng.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/Xqy/Scripts/ie6_loading.js"></script>
+    <![endif]-->
+
+
+    <script src="__PUBLIC__/Home/Xqy/Scripts/jquery.js"></script>
+    <script>
+        yg_x = new Date();
+    </script>
+    <script type="text/javascript">
+        var _bdhm_top = 0;
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        var _bdhm_tim = new Image(1, 1);
+        _bdhm_tim.id = "bdhmPerimg";
+        _bdhm_tim.src = _bdhmProtocol + "hm.baidu.com/_tt.gif?si=36a486fbdec46fc52ca666dd2e98f260&rnd=" + Math.round(Math.random() * 2147483647);
+        _bdhm_tim.onload = function () { _bdhm_top = 1; }
+    </script>
+    <!-- start Dplus -->
+    <script type="text/javascript">!function (a, b) { if (!b.__SV) { var c, d, e, f; window.dplus = b, b._i = [], b.init = function (a, c, d) { function g(a, b) { var c = b.split("."); 2 == c.length && (a = a[c[0]], b = c[1]), a[b] = function () { a.push([b].concat(Array.prototype.slice.call(arguments, 0))) } } var h = b; for ("undefined" != typeof d ? h = b[d] = [] : d = "dplus", h.people = h.people || [], h.toString = function (a) { var b = "dplus"; return "dplus" !== d && (b += "." + d), a || (b += " (stub)"), b }, h.people.toString = function () { return h.toString(1) + ".people (stub)" }, e = "disable track track_links track_forms register unregister get_property identify clear set_config get_config get_distinct_id track_pageview register_once track_with_tag time_event people.set people.unset people.delete_user".split(" "), f = 0; f < e.length; f++) g(h, e[f]); b._i.push([a, c, d]) }, b.__SV = 1.1, c = a.createElement("script"), c.type = "text/javascript", c.charset = "utf-8", c.async = !0, c.src = "//w.cnzz.com/dplus.php?token=1915ef989c5aence66fa", d = a.getElementsByTagName("script")[0], d.parentNode.insertBefore(c, d) } }(document, window.dplus || []), dplus.init("1915ef989c5aence66fa");</script><!-- end Dplus -->
+    <script src="__PUBLIC__/Home/Xqy/Scripts/topdsp.js"></script>
+    </block>
+    <block name="content">
+        <!------- 头部 ------->
+        <div class="header clearfix">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="http://www.yiguo.com"></a>
+                </div>
+                <!--搜索 开始-->
+                <div class="search" style="position:relative;">
+                    <div class="search-bar clearfix">
+                        <input type="text" id="keyword" name="keyword" class="search-input" value="输入商品名／编号／拼音" onfocus=" if (this.value == '输入商品名／编号／拼音') {this.value = '';this.style.color = '#000';} " onblur=" if (this.value == '') {this.value = '输入商品名／编号／拼音';this.style.color = '#999';} " style="color: rgb(153, 153, 153);">
+                        <input class="search-btn" type="submit" value="搜索">
+                    </div>
+                    <ul class="hide" id="shelper" style="display: none;"></ul>
+                    <div class="search-keywords" id="keywords">
+                        <script id="keywordstpl" type="text/x-handlebars-template">
+                            {{#KeyWords}}
+                            {{#equal IsImportant true}}
+                            <a href="{{Link}}" class="hot" target="_blank">{{Text}}</a>
+                            {{else}}
+                            <a href="{{Link}}" target="_blank">{{Text}}</a>
+                            {{/equal}}
+                            {{/KeyWords}}
+                        </script>
+                    </div>
+                </div>
+                <!--购物车 开始-->
+                <div class="shopping-cart">
+    <dl>
+        <dt class="shopping-btn"><a href="http://cart.yiguo.com/"> <span class="totleNum"><b>0</b></span><b class="totlePrice">0.0</b></a></dt>
+        <dd class="shopping-list">
+            <div class="spacer"></div>
+            <div class="nogoods" style="display:none;">
+                购物车中还没有商品，赶紧选购吧！
+            </div>
+            <div class="goods">
+                <p id="deliveryType" style="display:none;">满100元包邮！</p>
+                <ul></ul>
+                <div class="price-total">
+                    <div><span class="totleNum">共<b>0</b>件商品</span><span>共计<b class="totlePrice">¥0.00</b></span></div>
+                    <div><a href="http://cart.yiguo.com/" class="settleup">去购物车</a></div>
+                </div>
+            </div>
+        </dd>
+    </dl>
+</div>
+                <!--购物车 结束-->
+            </div>
+        </div>
+
+        
+
+
+<div class="header-nav">
+    <div class="wrap">
+        <!--商品分类 开始-->
+        <div class="catalogs">
+            <div class="catalogs-title"><a href="javascript:;">全部商品分类▼</a></div>
+            <div class="catalogs-list" id="_categry" style="display:none;">
+                <script id="_categorytpl" type="text/x-handlebars-template">
+    {{#each Catrgories}}
+    <div class="item">
+        <h3 class="t{{CategoryCode}}"><a href="http://www.yiguo.com/products/{{CategoryCode}}.html"><i></i>{{CategoryName}}<s>&gt;</s></a></h3>
+        <div class="sub-item" style="display: none;">
+            <h4><a href="http://www.yiguo.com/products/{{CategoryCode}}.html" > {{CategoryName}}</a></h4>
+            <div class="sub-list">
+                {{#if SubCategory2}}
+                {{#each SubCategory2}}
+                <a href="http://www.yiguo.com/products/{{CategoryCode}}.html" target="_blank">{{CategoryName}}</a>
+                {{/each}}
+                {{/if}}
+
+                {{#if SubCategory1}}
+                {{#each SubCategory1}}
+                <a href="http://www.yiguo.com/products/{{CategoryCode}}.html" target="_blank">{{CategoryName}}</a>
+                {{/each}}
+                {{/if}}
+
+                {{#if SubCategory0}}
+                {{#each SubCategory0}}
+                <a href="http://www.yiguo.com/products/{{CategoryCode}}.html" target="_blank">{{CategoryName}}</a>
+                {{/each}}
+                {{/if}}
+
+            </div>
+            <div class="catalogs-ad">
+                {{#each CategoryImageAd}}
+                <a href="{{Link}}"><img src="__PUBLIC__/Home/Xqy/Picture/c2a4d4837f09475c809bddf74d4fa01f.gif"></a>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+</script>
+
+            </div>
+        </div>
+        <!--商品分类 结束-->
+        <div class="nav-items">
+            <ul id="homenav">
+                <script id="homenavtpl" type="text/x-handlebars-template">
+                    {{#HomeNav}}
+                    <li><a href="{{Link}}" target="_blank">{{Text}}</a></li>
+                    {{/HomeNav}}
+                 </script>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="wrap">
+    <!--面包屑-->
+    <div class="crumbs">
+        <a class="ml0" href="/">首页</a>
+        >
+<a href='/products/02_channelhome.html'>国产水果</a>>                    <a href="http://www.yiguo.com/products/0211_mei.html">莓</a>
+>        精选蓝莓2盒(约125g/盒)
+    </div>
+    <!--产品详情-->
+    <div class="content clearfix">
+        <div class="product-intro clearfix j_product">
+            <!--预览图-->
+            <div class="pic-preview">
+                <div class="pic-big">
+                    <img class="j_product_img" width="500" height="500" src="__PUBLIC__/Home/Xqy/Picture/9288693743165594_500.jpg" style="display: block;">
+                    <img class="j_product_img" width="500" height="500" src="__PUBLIC__/Home/Xqy/Picture/9288693743198362_500.jpg" style="display: none;">
+                    <img class="j_product_img" width="500" height="500" src="__PUBLIC__/Home/Xqy/Picture/9288693743231130_500.jpg" style="display: none;">
+                    
+                </div>
+                <div class="pic-thumb">
+                    <div class="picList">
+                        <ul>
+                            <li><img width="85" height="85" src="__PUBLIC__/Home/Xqy/Picture/9288693743165594_500.jpg"></li>
+                            <li><img width="85" height="85" src="__PUBLIC__/Home/Xqy/Picture/9288693743198362_500.jpg"></li>
+                            <li><img width="85" height="85" src="__PUBLIC__/Home/Xqy/Picture/9288693743231130_500.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="icon"><img src="__PUBLIC__/Home/Xqy/Picture/icon06.png" width="46" height="46"></div>
+            </div>
+            <div class="product-info">
+                <div class="summary-name">
+                    <h1>精选蓝莓2盒(约125g/盒)</h1>
+                    <p></p>
+                    <input type="hidden" name="CommodityId" id="CommodityId" value="8a48280b-cd6c-4889-9150-da706a5d411f" />
+                </div>
+                <div class="summary-price clearfix">
+                    <div class="pro-price">
+                        <div>
+                            <span>价格：</span>
+                            <span><em>¥</em><strong>29.90</strong></span>
+                        </div>
+                            <div class="mt5">
+                                <span>市场价：</span>
+                                <span><del>¥66.00</del></span>
+                            </div>
+                    </div>
+                    <div class="pro-review">
+                        <p>总体满意度</p>
+                        <p><b>4.6</b> 分</p>
+                        <p><a href="#comment" id="pllabel"><span>(评论数84)</span></a></p>
+                    </div>
+                </div>
+                <div class="summary-other clearfix">
+                    <div class="left">
+
+
+
+<div class="pro-promo clearfix" style="margin-bottom:0px;padding-bottom:0px;border-bottom:none;">
+    <ul>
+    </ul>
+</div>                                                    <div class="choose clearfix">
+                                <div class="dt">规格：</div>
+                                <div class="dd">
+                                    <ul>
+                                            <li class="">
+                                                <a href="http://www.yiguo.com/product/11486.html">
+                                                    <span>￥179.00</span>
+                                                    <span>12盒/箱</span>
+                                                    <i></i>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="http://www.yiguo.com/product/40112.html">
+                                                    <span>￥59.90</span>
+                                                    <span>4盒/组</span>
+                                                    <i></i>
+                                                </a>
+                                            </li>
+                                            <li class="selected">
+                                                <a href="http://www.yiguo.com/product/62757.html">
+                                                    <span>￥29.90</span>
+                                                    <span>2盒/组</span>
+                                                    <i></i>
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                                                    <div class="pro-service">满百包邮，<b>24:00</b> 前完成订单 预计明日<b>(5月19日)</b>送达</div>
+                        <div class="pro-amount clearfix">
+                            <div class="dt">数量：</div>
+                            <div class="dd">
+                                <div class="spinner">
+                                    <button class="decrease" disabled="disabled">-</button>
+                                    <input type="text" class="spinner value" id="p_number" maxlength="2">
+                                    <button class="increase">+</button>
+                                </div>
+                                                <div class="addcart"><a class="btn-gn" href="javascript:;" onclick="G.app.cart.module.addToCart(this,'62757',$('#p_number').val(),app.referCart);addToCart()"><i></i>加入购物车</a></div>
+                            </div>
+                        </div>
+                        <div class="pro-share clearfix">
+                            <div class="favorite"><a href="javascript:;" onclick="G.app.cart.module.addToFavor('8a48280b-cd6c-4889-9150-da706a5d411f',1);addToFavitore()"><i></i>收藏</a></div>
+                            <div class="share" onclick="shareProduct();">
+                                <!-- JiaThis Button BEGIN -->
+                                <div class="jiathis_style">
+                                    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis share-icon" target="_blank">分享到</a>
+                                </div>
+                                <script type="text/javascript">
+
+                                    var jiathis_config = {
+                                        data_track_clickback: 'true', pic: "http://img01.yiguoimg.com/img/9288693743132826.jpg",
+
+                                        appkey: { "tsina": "1789372634" },
+                                        ralateuid: { "tsina": "1789372634" }
+
+
+                                    };
+                                </script>
+                                <script type="text/javascript" src="__PUBLIC__/Home/Xqy/Scripts/jia.js"
+                                        charset="utf-8"></script>
+                                <!-- JiaThis Button END -->
+                            </div>
+                        </div>
+
+                       
+
+                    </div>
+                    <div class="right">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" class="zx">
+                            <tbody>
+                                    <tr><th>产地：</th><td>山东青岛</td></tr>
+                                <tr><th>商品编号：</th><td>62757</td></tr>
+                                                                    <tr><th>商品状态：</th><td><font color='2CA6E0'>冷藏</font></td></tr>
+                                <tr><th>发货地：</th><td>上海</td></tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content clearfix">
+        <!--左侧-->
+        <div class="left-con">
+
+
+
+
+
+            <div id="RecentViewCommodity" style="display:none;">
+                <div class="box recently">
+    <div class="hd">最近浏览<a href="javascript:;" onclick="ClearViewedCommodity()">清空</a></div>
+    <div class="bd" id="recentcommodity">
+        <script id="recentcommoditytpl" type="text/x-handlebars-template">
+            {{#data}}
+            <div class="p">
+                <div class="img"><a class="del" onclick="DeleteViewedCommodity(this, '{{CommodityCode}}')"></a>
+                    <a href="http://www.yiguo.com/product/{{CommodityCode}}.html" target="_blank"><img src="__PUBLIC__/Home/Xqy/Picture/7e1e8aacee46480a9b44c64cd7884091.gif" width="68" height="68"></a>
+                </div>
+                <div class="txt">
+                    <a href="http://www.yiguo.com/product/{{CommodityCode}}.html" target="_blank">
+                        <strong>{{CommodityName}}</strong>
+                    </a>
+                </div>
+            </div>
+            {{/data}}
+        </script>
+    </div>
+</div>
+
+
+            </div>
+
+
+
+    <div class="box recommend">
+        <div class="hd">猜你喜欢</div>
+        <div class="bd">
+                <div class="p j_product"  _code="12780">
+                    <div class="img">
+                        <a href="http://www.yiguo.com/product/12780.html" target="_blank">
+                                <img src="__PUBLIC__/Home/Xqy/Picture/9288694143099053_300.jpg" width="68" height="68" class="j_product_img">
+
+                        </a>
+                    </div>
+                    <div class="txt">
+                        <a href="http://www.yiguo.com/product/12780.html" target="_blank">
+                            <strong>Driscoll&#39;s云南红树莓12盒(约125g/盒)</strong>
+                            <span>¥199.00</span>
+                        </a>
+                    </div>
+                    <a class="add" style="display: none;" onclick="G.app.cart.module.addToCart(this,'12780',1,app.referCart)">加入购物车</a>
+                </div>
+                <div class="p j_product"  _code="11486">
+                    <div class="img">
+                        <a href="http://www.yiguo.com/product/11486.html" target="_blank">
+                                <img src="__PUBLIC__/Home/Xqy/Picture/9288693680251030_300.jpg" width="68" height="68" class="j_product_img">
+
+                        </a>
+                    </div>
+                    <div class="txt">
+                        <a href="http://www.yiguo.com/product/11486.html" target="_blank">
+                            <strong>精选蓝莓12盒原箱(约125g/盒)</strong>
+                            <span>¥338.00</span>
+                        </a>
+                    </div>
+                    <a class="add" style="display: none;" onclick="G.app.cart.module.addToCart(this,'11486',1,app.referCart)">加入购物车</a>
+                </div>
+                <div class="p j_product"  _code="10797">
+                    <div class="img">
+                        <a href="http://www.yiguo.com/product/10797.html" target="_blank">
+                                <img src="__PUBLIC__/Home/Xqy/Picture/9288694143492269_300.jpg" width="68" height="68" class="j_product_img">
+
+                        </a>
+                    </div>
+                    <div class="txt">
+                        <a href="http://www.yiguo.com/product/10797.html" target="_blank">
+                            <strong>Driscoll&#39;s云南红树莓2盒(约125g/盒)</strong>
+                            <span>¥39.00</span>
+                        </a>
+                    </div>
+                    <a class="add" style="display: none;" onclick="G.app.cart.module.addToCart(this,'10797',1,app.referCart)">加入购物车</a>
+                </div>
+                <div class="p j_product"  _code="40112">
+                    <div class="img">
+                        <a href="http://www.yiguo.com/product/40112.html" target="_blank">
+                                <img src="__PUBLIC__/Home/Xqy/Picture/9288693682905238_300.jpg" width="68" height="68" class="j_product_img">
+
+                        </a>
+                    </div>
+                    <div class="txt">
+                        <a href="http://www.yiguo.com/product/40112.html" target="_blank">
+                            <strong>精选蓝莓4盒(约125g/盒)</strong>
+                            <span>¥118.00</span>
+                        </a>
+                    </div>
+                    <a class="add" style="display: none;" onclick="G.app.cart.module.addToCart(this,'40112',1,app.referCart)">加入购物车</a>
+                </div>
+                <div class="p j_product"  _code="50155">
+                    <div class="img">
+                        <a href="http://www.yiguo.com/product/50155.html" target="_blank">
+                                <img src="__PUBLIC__/Home/Xqy/Picture/9288694143230125_300.jpg" width="68" height="68" class="j_product_img">
+
+                        </a>
+                    </div>
+                    <div class="txt">
+                        <a href="http://www.yiguo.com/product/50155.html" target="_blank">
+                            <strong>Driscoll&#39;s云南红树莓4盒(约125g/盒)</strong>
+                            <span>¥69.00</span>
+                        </a>
+                    </div>
+                    <a class="add" style="display: none;" onclick="G.app.cart.module.addToCart(this,'50155',1,app.referCart)">加入购物车</a>
+                </div>
+                <div class="p j_product"  _code="50073">
+                    <div class="img">
+                        <a href="http://www.yiguo.com/product/50073.html" target="_blank">
+                                <img src="__PUBLIC__/Home/Xqy/Picture/9288693974999206_300.jpg" width="68" height="68" class="j_product_img">
+
+                        </a>
+                    </div>
+                    <div class="txt">
+                        <a href="http://www.yiguo.com/product/50073.html" target="_blank">
+                            <strong>海南妃子笑荔枝2.5 kg (525预售)</strong>
+                            <span>¥99.90</span>
+                        </a>
+                    </div>
+                    <a class="add" style="display: none;" onclick="G.app.cart.module.addToCart(this,'50073',1,app.referCart)">加入购物车</a>
+                </div>
+                <div class="p j_product" style=border-bottom-width:0px _code="1004290">
+                    <div class="img">
+                        <a href="http://www.yiguo.com/product/1004290.html" target="_blank">
+                                <img src="__PUBLIC__/Home/Xqy/Picture/9288693992628390_300.jpg" width="68" height="68" class="j_product_img">
+
+                        </a>
+                    </div>
+                    <div class="txt">
+                        <a href="http://www.yiguo.com/product/1004290.html" target="_blank">
+                            <strong>海南妃子笑荔枝500g</strong>
+                            <span>¥39.90</span>
+                        </a>
+                    </div>
+                    <a class="add" style="display: none;" onclick="G.app.cart.module.addToCart(this,'1004290',1,app.referCart)">加入购物车</a>
+                </div>
+        </div>
+    </div>
+
+
+
+
+        </div>
+        <!--右侧-->
+        <div class="main-con">
+            <!--当季热卖-->
+
+
+    <div class="hot-sale">
+        <div class="hd">当季热卖</div>
+        <div class="bd clearfix">
+            <ul>
+                    <li>
+                        <div class="p-img">
+                            <a href="http://www.yiguo.com/product/156202.html" target="_blank">
+                               <img src="__PUBLIC__/Home/Xqy/Picture/151010145527843_156202_300.jpg" width="135" height="135">
+                            </a>
+                        </div>
+                        <div class="p-name"><a href="http://www.yiguo.com/product/156202.html" target="_blank">阿根廷红虾2kg（特大号）</a></div>
+                        <div class="p-price">
+                            <strong>¥188.00</strong>
+                                <del>
+                                    ￥198.00
+
+                                </del>                         </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href="http://www.yiguo.com/product/156105.html" target="_blank">
+                               <img src="__PUBLIC__/Home/Xqy/Picture/151010134211780_156105_300.jpg" width="135" height="135">
+                            </a>
+                        </div>
+                        <div class="p-name"><a href="http://www.yiguo.com/product/156105.html" target="_blank">原膳烟熏三文鱼 （切片）200g</a></div>
+                        <div class="p-price">
+                            <strong>¥39.00</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href="http://www.yiguo.com/product/152250.html" target="_blank">
+                               <img src="__PUBLIC__/Home/Xqy/Picture/151010142426348_152250_300.jpg" width="135" height="135">
+                            </a>
+                        </div>
+                        <div class="p-name"><a href="http://www.yiguo.com/product/152250.html" target="_blank">澳洲腱子心1kg</a></div>
+                        <div class="p-price">
+                            <strong>¥108.00</strong>
+                                <del>
+                                    ￥128.00
+
+                                </del>                         </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href="http://www.yiguo.com/product/104135.html" target="_blank">
+                               <img src="__PUBLIC__/Home/Xqy/Picture/9288693732286617_300.jpg" width="135" height="135">
+                            </a>
+                        </div>
+                        <div class="p-name"><a href="http://www.yiguo.com/product/104135.html" target="_blank">苏北散养童子鸡</a></div>
+                        <div class="p-price">
+                            <strong>¥19.80</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href="http://www.yiguo.com/product/104337.html" target="_blank">
+                               <img src="__PUBLIC__/Home/Xqy/Picture/151010134255645_104337_300.jpg" width="135" height="135">
+                            </a>
+                        </div>
+                        <div class="p-name"><a href="http://www.yiguo.com/product/104337.html" target="_blank">原膳皖南山坡散养土鸡蛋（15枚装）</a></div>
+                        <div class="p-price">
+                            <strong>¥21.80</strong>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+            <!--商品详情-->
+            <div class="product-detail">
+                <div class="detail-tab">
+                    <ul class="detail-ul">
+                        <li class="active"><a href="#details">商品详情</a></li>
+                        <li><a href="#comment">用户评论<b>84</b></a></li>
+                    </ul>
+                            <div class="addcart"><a href="javascript:;" onclick="G.app.cart.module.addToCart(this,'62757',$('#p_number').val(),app.referCart);addToCart()">加入购物车</a></div>
+                </div>
+                <div class="detail-content">
+                    <!--商品详情-->
+                    <div class="detail-item details clearfix" id="details">
+
+
+
+    <table class="detail-table">
+        <tbody>
+                <tr>
+                    <th>单果规格</th>
+                    <td>
+约125g/盒
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+
+
+<p style="white-space: normal;"><img src="__PUBLIC__/Home/Xqy/Picture/513691851948171414_880x437.jpg"/></p><p style="white-space: normal;"><img src="__PUBLIC__/Home/Xqy/Picture/513691851948138646_880x353.jpg"/></p><p style="white-space: normal;"><img src="__PUBLIC__/Home/Xqy/Picture/513691851948236950_880x520.jpg"/></p><p style="white-space: normal;"><img src="__PUBLIC__/Home/Xqy/Picture/513691851948204182_880x486.jpg"/></p><p style="white-space: normal;"><img src="__PUBLIC__/Home/Xqy/Picture/513691851948269718_880x447.jpg"/></p><p><br/></p>                        
+                                            </div>
+                    <!--用户评论-->
+                    <div class="detail-item " id="comment" style="display:none;">
+                        <div class="comment-info clearfix">
+                            <div class="score">总体满意度<b>4.6<span>分</span></b>(共有<strong>84</strong>人评论)</div>
+                            <div class="percent">
+                                <ul class="slip">
+                                    <li><b>好评</b><span w="" style="width: 0%;"></span><i></i></li>
+                                    <li><b>中评</b><span w="" style="width:0%;"></span><i></i></li>
+                                    <li><b>差评</b><span w="" style="width:0%;"></span><i></i></li>
+                                </ul>
+                            </div>
+                            <div class="comment-btn">
+                                前5位评论用户可获得更高悠币奖励
+                                <a class="btn-gn" id="commentBtn">我要评论</a>
+                                <p>只有购买过该商品的用户才能评论</p>
+                            </div>
+                        </div>
+                        <div class="comment-list clearfix">
+                            <div class="comment-tab">
+                                <span class="on" _votetype="0">全部评论（<font id="vote_all"></font>）</span>
+                                <span _votetype="1">好评（<font id="vote_hp"></font>）</span>
+                                <span _votetype="2">中评（<font id="vote_zp"></font>）</span>
+                                <span _votetype="3">差评（<font id="vote_cp"></font>）</span>
+                                <span _votetype="4">有晒单（<font id="vote_st"></font>）</span>
+                            </div>
+
+                            <div id="ProductCommentVote">
+                                <div _votetype="0"></div>
+                                <div _votetype="1" style="display:none;"></div>
+                                <div _votetype="2" style="display:none;"></div>
+                                <div _votetype="3" style="display:none;"></div>
+                                <div _votetype="4" style="display:none;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</block>
+
+<block name="footer">
+<!------- 页尾 ------->
+<div class="footer">
+    <div class="wrap">
+        <dl class="col1">
+            <dt>新手指南</dt>
+            <dd>
+                <p><a href="/help/registersteps.html">账户注册</a></p>
+                <p><a href="/help/gouwuliucheng.html">购物流程</a></p>
+                <p><a href="/help/ordering.html">订购方式</a></p>
+                <p><a href="/help/ubremark.html">悠币说明</a></p>
+                <p><a href="http://www.yiguo.com/activity_vip.html">会员等级</a></p>
+            </dd>
+        </dl>
+        <dl class="col2">
+            <dt>付款方式</dt>
+            <dd>
+                <p><a href="/help/payment.html">支付方式</a>/<a href="/help/invoiceremark.html">发票说明</a></p>
+                <p><a href="/help/chongzhiliucheng.html">充值说明</a>/<a href="/help/usechuzhika.html">储值卡说明</a></p>
+                <p><a href="/help/usegiftcard.html">优惠代码/礼品卡说明</a></p>
+                <p><a href="/help/cardbuynotes.html">卡券购买章程</a></p>
+            </dd>
+        </dl>
+        <dl class="col3">
+            <dt>配送方式</dt>
+            <dd>
+                <p><a href="/help/sendyuefei.html">配送运费</a></p>
+                <p><a href="/help/sendquyu.html">配送范围</a></p>
+                <p><a href="/help/sendtime.html">配送时间</a></p>
+            </dd>
+        </dl>
+        <dl class="col4">
+            <dt>售后服务</dt>
+            <dd>
+                <p><a href="/help/tuihuanhuoshuoming.html">退换货政策</a></p>
+                <p><a href="/help/huanhuolc.html">退换货流程</a></p>
+                <p><a href="/help/qa.html">常见问题</a></p>
+                <p><a href="http://home.yiguo.com/Trade/Advice">投诉与建议</a></p>
+            </dd>
+        </dl>
+        <dl class="col5">
+            <dt>关于我们</dt>
+            <dd>
+                <p><a href="/help/introduction.html">公司介绍</a></p>
+                <p><a href="/help/contact.html">联系我们</a></p>
+                <p><a href="/help/procooperation.html">业务合作</a></p>
+                <p><a href="/help/chengxinjubao.html">诚信举报</a></p>
+                <p><a href="http://yiguo.zhiye.com/home" target="_blank" rel="nofollow">人才招聘</a></p>
+                <p><a href="/help/friendurl.html">友情链接</a></p>
+                
+            </dd>
+        </dl>
+        <div class="service"><span>客服热线 400-000-7788 企业采购或团购，请转2号键咨询</span><span>周一至周日 9:00-21:00</span></div>
+        <div class="copyright">
+            <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+            <p>沪ICP备09008015号 Copyright © 2005-2016 <a href="http://www.yiguo.com/">上海易果电子商务有限公司</a>版权所有</p>
+            <p class="authentication">
+                <a href="http://shwg.dianping.com/index.html" target="_blank" rel="nofollow"><img src="__PUBLIC__/Home/Xqy/Picture/2517491005058doc.png" height="47"></a>
+                <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20110512114405424" target="_blank"><img src="__PUBLIC__/Home/Xqy/Picture/footer_copy.gif" width="47px" height="47px"></a>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502000002" style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px;"><img src="__PUBLIC__/Home/Xqy/Picture/ghs.png" style="float: left;"/><span style="float: left; height: 20px; line-height: 20px; margin: 0px 0px 0px 5px; color: #939393;">沪公网安备 31010502000002号</span></a>
+
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+        <!------- 侧边悬浮 ------->
+        <div class="sidebar" id="sidebar">
+            <a href="#body" class="s-btn goTop"></a>
+            
+        </div>
+
+    </div>
+     
+    <script src="__PUBLIC__/Home/Xqy/Scripts/jquery.cookie.js"></script>
+    <script src="__PUBLIC__/Home/Xqy/Scripts/handlebars-v3.0.1.js"></script>
+    <script src="__PUBLIC__/Home/Xqy/Scripts/utaste.js"></script>
+    <script src="__PUBLIC__/Home/Xqy/Scripts/base.js"></script>
+    <script src="__PUBLIC__/Home/Xqy/Scripts/jquery.superslide.js"></script>
+    <script src="__PUBLIC__/Home/Xqy/Scripts/sidebar.js"></script>
+    <script src="__PUBLIC__/Home/Xqy/Scripts/floor-guide.js"></script>
+    <script src="__PUBLIC__/Home/Xqy/Scripts/global-v2.js"></script>
+    <script src="__PUBLIC__/Home/Xqy/Scripts/search.js"></script>
+    <script src="__PUBLIC__/Home/Xqy/Scripts/app.js"></script>
+    <script src="__PUBLIC__/Home/Xqy/Scripts/common.js"></script>
+    <script src="__PUBLIC__/Home/Xqy/Scripts/util.js"></script>
+    <script>
+        $(function () {
+            app.init();
+        })
+    </script>
+    <!--yiguoStats-->
+    <script type="text/javascript">
+        var _yaq = _yaq || [];
+        _yaq.push(['_operate', 'view']);
+        _yaq.push(['_site', 'YiGuo']);
+        _yaq.push(['categoryid', '']);
+        _yaq.push(['behaviorid', '']);
+        _yaq.push(['behavior', '']);
+
+        (function () {
+            var ya = document.createElement('script'); ya.type = 'text/javascript'; ya.async = true;
+            ya.src = "http://tracker.yiguo.com/Scripts/yiguoStats.min.js";
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ya, s);
+        })();
+
+    </script>
+  
+    
+    <script src="__PUBLIC__/Home/Xqy/Scripts/product_detail.js"></script>
+    <script src="__PUBLIC__/Home/Xqy/Scripts/jquery.spinner.js"></script>
+    <script type="text/javascript">
+        AddViewedCommodity('精选蓝莓2盒(约125g/盒)', '62757', 'http://img10.yiguoimg.com/e/items/2016/160426/9288693743132826_300.jpg');
+        $(".spinner").spinner({
+            max: 99,
+            min: 1,
+            step: 1
+        });
+        app.getrecentViewCommodity("/product/GetRecentViewCommodity?commodityCode=62757");
+        $(function () {
+            $(".pro-promo").last().css({ "border-bottom": "1px dashed #d9d9d9", "margin-bottom": "20px", "padding-bottom": "10px" });
+        })
+    </script>
+    <script type="text/javascript">
+        if (getCookie('cps') == "100001&mediav") {
+            var _mvq = window._mvq || [];
+            window._mvq = _mvq;
+            _mvq.push(['$setAccount', 'm-20296-1']);
+            _mvq.push(['$setGeneral', 'goodsdetail', '', /*用户名*/ '', /*用户id*/ '']);
+            _mvq.push(['$logConversion']);
+
+            _mvq.push(['setPageUrl', /*单品着陆页url*/ window.location.href]);	//如果不需要特意指定单品着陆页url请将此语句删掉
+            _mvq.push(['$addGoods',  /*分类id*/   '0211_mei', /*品牌id*/ '', /*商品名称*/  '精选蓝莓2盒(约125g/盒)',/*商品ID*/ '62757',/*商品售价*/ '29.90', /*商品图片url*/'http://img01.yiguoimg.com/img/9288693743132826.jpg', /*分类名*/ '莓', /*品牌名*/ '', /*商品库存状态1或是0*/ '1', /*网络价*/ '',/*收藏人数*/ '', /*商品下架时间*/ '']);
+            _mvq.push(['$addPricing', /*价格描述*/ '']);
+            _mvq.push(['$logData']);
+        }
+        $(window).scroll(function () {
+            var spaceTop = $('.detail-content').offset().top,
+                scrollTop = $(window).scrollTop();
+            if (scrollTop > spaceTop) {
+                $('.detail-tab').addClass('fixed');
+                $(".detail-tab").append($(".shopping-cart"));
+            }
+            else {
+                $('.detail-tab').removeClass('fixed');
+                $(".header .wrap").append($(".shopping-cart"));
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        if (getCookie('cps') == "100002&ipinyou") {
+            var _goodsData = {
+                id: '62757', //商品ID（必填）
+                soldOut: '1', // 状态 1下架，0在售（必填）
+                category: '莓', // 所属分类完整路径 （必填）
+                categoryId: '0211_mei', // 所属分类ID （必填）
+                name: '精选蓝莓2盒(约125g/盒)', // 商品名称（必填）
+                price: '29.90', // 商品售价（必填）
+                imgUrl: 'http://img01.yiguoimg.com/img/9288693743132826.jpg', // 商品预览图 （必填）
+                productUrl: window.location.href, // 商品URL地址 （必填）
+                domain: '1', // 分站（如有分站必填）
+                brand: ''
+            };
+            var _py = _py || [];
+            _py.push(['a', '6y..SrO6vljE2uhkqi03vEbY8_']);
+            _py.push(['domain', 'stats.ipinyou.com']);
+            _py.push(['pi', _goodsData]);
+            _py.push(['e', '']);
+            -function (d) {
+                var s = d.createElement('script'),
+                e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
+                f = 'https:' == location.protocol;
+                s.src = (f ? 'https' : 'http') + '://' + (f ? 'fm.ipinyou.com' : 'fm.p0y.cn') + '/j/adv.js';
+            }(document);
+        }
+    </script>
+    <script>
+
+        var productids = new Array();
+        var products = $(".recommend .j_product img a");
+        $.each(products, function (index, item) {
+            if (index < 10) {
+                var link = $(item).attr("href");
+                productids.push(link.substring(link.lastIndexOf('/') + 1, link.lastIndexOf('.')));
+            }
+        });
+
+        var firstcategoryLink = $(".crumbs a").eq(1).attr("href");
+        var categoryCode; var categoryName;
+        if ($(".crumbs a").eq(1) != undefined && $(".crumbs a").eq(1).length>0) {
+            categoryCode = firstcategoryLink.substring(firstcategoryLink.lastIndexOf('/') + 1, firstcategoryLink.lastIndexOf('.'));
+            categoryName = $(".crumbs a").eq(1).html();
+        }
+
+        window.__zp_tag_params = {
+            p_zp_prodstype: "11b644a770497ee13985e6e98aa78cfc",
+            pagetype: "detail",
+            categoryID: "0211_mei",
+            productID: "62757",
+            stock: "1",
+            rec_productID_list: productids,
+            p_zp_prods: {
+                "outerid": "62757",
+                "name": "精选蓝莓2盒(约125g/盒)",
+                "price": "29.90",//现价
+                "value": "66.00",//原价
+                "image": "http://img10.yiguoimg.com/e/items/2016/160426/9288693743132826_300.jpg",
+                "loc": "http://www.yiguo.com/product/62757.html",
+                "categoryID": categoryCode,
+                "categoryName": categoryName,
+                "subCategoryID": "0211_mei",
+                "subCategoryName": "莓",
+                "comments": "84",
+                "description": "",
+                "score": "4.630952380952380952380952381",
+                "stock": "1"
+            }
+        };
+    </script>
+
+    <script type="text/javascript">
+        function shareProduct() {
+            _adwq.push([
+                '_setAction', '8nj0ha',
+                 '' + getCookie("uid") + '', //请填入用户id
+                '62757' //请填入商品id，选填
+            ]);
+
+        }
+        function addToFavitore() {
+            _adwq.push([
+                '_setAction', '8niok8',
+               '' + getCookie("uid") + '', //请填入用户id
+                '62757' //请填入商品id，选填
+            ]);
+
+        }
+        function addToCart()
+        {
+            _adwq.push(['_setDataType', 'cart']);
+            _adwq.push(['_setCustomer',
+                 '' + getCookie("uid") + '', //请填入用户id
+            ]);
+            _adwq.push(['_setItem',
+                '62757',    // 09890是一个例子，请填入商品编号  - 必填项
+                '精选蓝莓2盒(约125g/盒)',       // 电视是一个例子，请填入商品名称  - 必填项
+                '29.90',    // 12.00是一个例子，请填入商品金额  - 必填项
+                '' + $("#p_number").val() + '',        // 1是一个例子，请填入商品数量  - 必填项
+                '0211_mei',     // A123是一个例子，请填入商品分类编号  - 必填项
+                '莓'        // 家电是一个例子，请填入商品分类名称  - 必填项
+            ]);
+            _adwq.push(['_trackTrans']);
+
+        }
+    </script>
+
+    <script type="text/javascript">
+        _adwq.push(['_setDataType', 'view']);
+        _adwq.push(['_setCustomer',
+            '' + getCookie("uid") + ''   //1234567是一个例子，请换成当前登陆用户ID或用户名，未登录情况下传空字符串
+        ]);
+        _adwq.push(['_setItem',
+            '62757',    // 09890是一个例子，请填入商品编号  - 必填项
+            '精选蓝莓2盒(约125g/盒)',       // 电视是一个例子，请填入商品名称  - 必填项
+            '29.90',    // 12.00是一个例子，请填入商品现价  - 必填项
+            '1',        // 商品数量，默认传1即可
+            '0211_mei',     // A123是一个例子，请填入商品分类编号，填写最小的分类级别  - 必填项
+            '莓',      // 家电是一个例子，请填入商品分类名称，填写最小的分类级别  - 必填项
+            '66.00',     // 10.00是一个例子，请填入商品原价，可以等于商品现价 - 必填项
+            'http://img10.yiguoimg.com/e/items/2016/160426/9288693743132826_300.jpg', // 请填入素材图片地址，注意是完整地址 - 必填项
+            'Y',             // 请填入商品状态，Y代表有效，N代表无效（缺货和下架） - 必填项
+            'http://www.yiguo.com/product/62757.html',     //请填入商品url地址 - 必填项
+            '',        //请填入商品下架时间，秒级别的时间戳 - 选填项
+            '',        //请填入品牌id - 选填项
+            ''        //请填入品牌名称  - 选填项
+        ]);
+        _adwq.push(['_trackTrans']);
+    </script>
+
+
+    <noscript>
+        <img src="__PUBLIC__/Home/Xqy/Picture/adv.gif" style="display: none;" />
+    </noscript>
+
+    <script src="__PUBLIC__/Home/Xqy/Scripts/stats.js"></script>
+    
+    <noscript><img src="__PUBLIC__/Home/Xqy/Picture/adv.gif" style="display:none;" /></noscript>
+</block>

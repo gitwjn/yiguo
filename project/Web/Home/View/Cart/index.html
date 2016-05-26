@@ -1,0 +1,772 @@
+﻿<extend name="Public/default" />
+<block name="top">
+        <title>购物车-易果网</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="Keywords" content="水果，进口水果，国产水果，易果网" />
+            <meta name="Description" content="易果网是全国最大的专业精品水果网之一，从事高品质水果及健康食品销售，提供各类进口水果，国产水果，以专业便捷的配送服务让易果迅速布遍全国各地，使您第一时间品尝到最优质最新鲜的水果。电话：400-820-8251,800-820-8251" />
+            <meta property="qc:admins" content="15753240576117576375" />
+            <script type="text/javascript">
+                var yg_x = new Date();
+                var httpUrlOneStats="http://tracker.yiguo.com";
+            </script>
+            <link rel="shortcut icon" href="http://static01.yiguo.com/cart/images/yiguo.ico" />
+            <link href="__PUBLIC__/Home/Index/css/public.css" rel="stylesheet" type="text/css" />
+            <link href="__PUBLIC__/Home/Cart/Content/yg.css" rel="stylesheet" type="text/css" />
+            
+            <link href="__PUBLIC__/Home/Cart/Content/cart.css" rel="stylesheet" type="text/css" />
+</block>
+    <block name="content">
+            <div class="header clearfix">
+
+                    <div class="wrap">
+                        <div class="logo">
+                            <a href="http://www.yiguo.com" target="_blank"></a>
+                            
+                        </div>
+                        <div class="steps">
+                            <ul>
+                                <li class="on"><b class="b1"></b><span>我的购物车</span></li>
+                                <li><i></i><b class="b2"></b><span>填写订单信息</span></li>
+                                <li><i></i><b class="b3"></b><span>成功提交订单</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+
+        <div id="theLogin" class="popout p-login" style="display:none;">
+            <div class="popout-wrap">
+                <div class="popout-con">
+                    <div class="title" style="margin-bottom:40px;">登    录<a class="close" href="javascript:void()"></a></div>
+
+                    <iframe src="__PUBLIC__/Home/Cart/https://login.yiguo.com/login/SimIndex?Url=http://cart.yiguo.com/ShopCart/RedirectToOrder" id="dialogIframe" name="dialogIframe" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" style="border: 0px; width: 100%; height: 79%;"></iframe>
+                </div>
+            </div>
+            <div class="popout-bg">&nbsp;</div>
+        </div>
+        <!-------  我的购物车 ------->
+        <div class="cart">
+
+            <?php 
+                if(isset($_SESSION['cart'])){
+            ?>
+            <div class="wrap">
+                    <!--购物车空-->
+                    <div class="cart-none" style="display:block;">
+                        <p>
+                        <b>购物车是空的，去买点东西吧！<a href="http://www.yiguo.com">继续逛逛&gt;&gt;</a></b>
+                                <br>您还尚未<a href="https://login.yiguo.com/Login?Url=http://cart.yiguo.com/">登录</a>
+                        </p>
+                    </div>
+                <!--特惠换购-->
+                <div class="preferential-buy">
+
+
+
+                </div>
+            </div>
+
+            
+
+
+
+
+
+    <?php
+        }else{
+     ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="wrap">
+                <h2>
+                    我的购物车
+
+
+
+    <div class="city clearfix">
+        <div class="city-sz"><i></i>配送至：</div>
+        <div class="city-tit">
+            <a class="city-name" href="javascript:void()">上海<s></s></a>
+        </div>
+
+
+    <div class="city-con">
+        <div class="headline">
+            <a>&gt;&gt;</a><a href="javascript:void()" v="64" aid="other">全国其它城市</a> 请根据您的收货地址选择
+        </div>
+
+        <div class="citylist border">
+                <dl>
+                    <dt>A</dt>
+                    <dd>
+                            <a href="javascript:void()" v="16" class="" aid="78d6e5b9-669d-481f-b395-cea5e1e6e5a0">安庆市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>B</dt>
+                    <dd>
+                            <a href="javascript:void()" v="32" class="" aid="daf7b0e2-35ea-4183-93e2-03dd4e7211d0">滨州市</a>
+                            <a href="javascript:void()" v="32" class="" aid="15b6c4e6-69f2-4001-a631-62c0c36102b1">北京(郊区)</a>
+                            <a href="javascript:void()" v="2" class="hot" aid="eabbe02f-59e0-46e6-90e7-cd8a89dbb98f">北京</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>C</dt>
+                    <dd>
+                            <a href="javascript:void()" v="16" class="" aid="708f0b6e-91f2-4731-8576-07c78ea08351">成都市</a>
+                            <a href="javascript:void()" v="4" class="" aid="8a72d144-cc9b-42b4-884e-393854bb15ee">慈溪市</a>
+                            <a href="javascript:void()" v="16" class="" aid="7c046210-81f3-4638-a09b-6b2e8ecbe957">重庆</a>
+                            <a href="javascript:void()" v="32" class="" aid="25123e41-42e0-40e5-b2bd-76ba94daa655">长春市</a>
+                            <a href="javascript:void()" v="4" class="" aid="05037210-573c-436b-b24a-9d345dca54f7">常熟市</a>
+                            <a href="javascript:void()" v="4" class="" aid="a338e3c1-e7e7-4482-b248-c5875b22a27b">常州市</a>
+                            <a href="javascript:void()" v="16" class="" aid="e450593b-b52f-4233-b106-cb518acb3896">长沙市</a>
+                            <a href="javascript:void()" v="32" class="" aid="ee36933d-939f-4f6b-8a2b-d060ee9ca495">沧州市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>D</dt>
+                    <dd>
+                            <a href="javascript:void()" v="512" class="hot" aid="20c2f64b-c91f-4095-8fb4-3f1fbbb55f82">东莞市</a>
+                            <a href="javascript:void()" v="32" class="" aid="3220a369-6a2d-4415-a46a-75a699214736">大连市</a>
+                            <a href="javascript:void()" v="32" class="" aid="dd7cbdb8-6463-436f-ba09-93c69150f137">东营市</a>
+                            <a href="javascript:void()" v="32" class="" aid="8f1e3541-74b4-4993-b242-a2bf9bf15d0d">德州市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>F</dt>
+                    <dd>
+                            <a href="javascript:void()" v="512" class="hot" aid="6a637459-eca9-46b8-964d-35c11cad039a">佛山市</a>
+                            <a href="javascript:void()" v="16" class="" aid="46e851bf-6fb4-4250-8c90-4f7774a176f1">福州市</a>
+                            <a href="javascript:void()" v="4" class="" aid="c7f7d216-b6aa-4287-84ec-8d8cd0dbec04">奉化市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>G</dt>
+                    <dd>
+                            <a href="javascript:void()" v="512" class="hot" aid="c8dbd17f-a8e0-43b1-b9ce-de1efdc2670e">广州市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>H</dt>
+                    <dd>
+                            <a href="javascript:void()" v="512" class="hot" aid="63179983-02f7-44a3-a69f-0f9589e44a35">惠州市</a>
+                            <a href="javascript:void()" v="32" class="" aid="4e09d210-7744-44fe-a45f-1e166aa92c2c">菏泽市</a>
+                            <a href="javascript:void()" v="4" class="" aid="7254d134-678b-4976-86f0-520fab6bcc46">海宁市</a>
+                            <a href="javascript:void()" v="16" class="" aid="f2b41b20-c240-4e27-a7b4-5828f8fca3e9">合肥市</a>
+                            <a href="javascript:void()" v="32" class="" aid="18cd4b6e-a0c3-4190-9988-c724c1da8bf5">哈尔滨市</a>
+                            <a href="javascript:void()" v="128" class="hot" aid="a10524be-acea-451e-9280-df0514e11e2b">杭州市</a>
+                            <a href="javascript:void()" v="4" class="" aid="9fb6eac6-ea03-409b-89d9-e13c27e01576">湖州市</a>
+                            <a href="javascript:void()" v="4" class="" aid="3c2af8a1-c3eb-418b-97ee-e5f92c44f8ad">淮安市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>J</dt>
+                    <dd>
+                            <a href="javascript:void()" v="32" class="" aid="97fe0ada-54d3-4b5f-9096-19ad57929d07">济南市</a>
+                            <a href="javascript:void()" v="32" class="" aid="69417568-9e3a-49c6-b21d-5282b7239922">吉林市</a>
+                            <a href="javascript:void()" v="4" class="" aid="ddd4e4d0-afb3-46c6-8aa6-6257c8ce9bee">嘉兴市</a>
+                            <a href="javascript:void()" v="4" class="" aid="4673dd12-4056-4590-8267-8c0aff24b792">嘉善市</a>
+                            <a href="javascript:void()" v="16" class="" aid="91c38a9c-30e0-4e44-af39-9b5d49928509">景德镇市</a>
+                            <a href="javascript:void()" v="512" class="hot" aid="43ba3517-6aa8-423b-9f02-a3b0fd681740">江门市</a>
+                            <a href="javascript:void()" v="4" class="" aid="72f8f62e-e5cb-418f-9419-a542c409d122">江阴市</a>
+                            <a href="javascript:void()" v="4" class="" aid="1e07c926-06e9-40cd-b257-a78d1d313ae7">金华市</a>
+                            <a href="javascript:void()" v="32" class="" aid="c64e3be4-5e14-4a74-ae4f-f6cd366ae624">济宁市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>K</dt>
+                    <dd>
+                            <a href="javascript:void()" v="128" class="hot" aid="0dbb02ef-c055-429f-97b6-5dc7a5bfeda8">昆山市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>L</dt>
+                    <dd>
+                            <a href="javascript:void()" v="4" class="" aid="b0efaf6f-ec54-4264-b0a5-2012a9ec7ee8">丽水市</a>
+                            <a href="javascript:void()" v="32" class="" aid="afbcecb5-0f4c-4e28-aeb4-53372dd301a7">临沂市</a>
+                            <a href="javascript:void()" v="32" class="" aid="bc3c25d7-7308-40aa-8fd7-60b96ba87bf4">聊城市</a>
+                            <a href="javascript:void()" v="32" class="" aid="8edda15e-0e21-436c-978d-68eb5bb14ef7">兰州市</a>
+                            <a href="javascript:void()" v="32" class="" aid="297c5d78-4d09-42cc-ac13-8421f201b6a9">辽阳市</a>
+                            <a href="javascript:void()" v="256" class="" aid="7f21282c-4bd0-45c0-a195-87663f9c27eb">廊坊市</a>
+                            <a href="javascript:void()" v="4" class="" aid="b2d5732b-b0f8-4fdf-b011-b95b31effa1d">连云港市</a>
+                            <a href="javascript:void()" v="32" class="" aid="fec2b413-bdf1-4c6d-98ec-d2de0f237be0">莱芜市</a>
+                    </dd>
+                </dl>
+        </div>
+        <div class="citylist">
+                <dl>
+                    <dt>M</dt>
+                    <dd>
+                            <a href="javascript:void()" v="4" class="" aid="45a989b7-d34e-40c7-aca1-990923eda2cd">马鞍山市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>N</dt>
+                    <dd>
+                            <a href="javascript:void()" v="64" class="" aid="7cd187b5-8b3f-4c1a-8115-24a5e2d18f3a">南宁市</a>
+                            <a href="javascript:void()" v="16" class="" aid="75fbd2c7-8cbc-4bbd-94ef-5eb037a75be5">南昌市</a>
+                            <a href="javascript:void()" v="4" class="" aid="603d28a7-b4c8-4a13-823f-d627c2655557">南通市</a>
+                            <a href="javascript:void()" v="128" class="hot" aid="9069d884-96c5-4478-bb49-d6ba55b751c8">南京市</a>
+                            <a href="javascript:void()" v="128" class="hot" aid="c0a5de4e-9087-4678-9056-f589ad833656">宁波市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Q</dt>
+                    <dd>
+                            <a href="javascript:void()" v="32" class="" aid="7ced387b-577d-4060-83d1-13b78f60ff53">青岛市</a>
+                            <a href="javascript:void()" v="16" class="" aid="2b3763ec-2491-4ee0-97a6-20cf70f81933">泉州市</a>
+                            <a href="javascript:void()" v="32" class="" aid="5d9e78ba-c583-4962-b279-2a8948df9ee1">秦皇岛市</a>
+                            <a href="javascript:void()" v="512" class="hot" aid="f7330b43-1177-4686-9a04-9f5176d046e3">清远市</a>
+                            <a href="javascript:void()" v="4" class="" aid="4693602d-80d7-4b72-b3b5-ca6a26f051f1">衢州市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>R</dt>
+                    <dd>
+                            <a href="javascript:void()" v="32" class="" aid="d1bcc39a-7383-40ca-add9-ee3feb38b677">日照市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>S</dt>
+                    <dd>
+                            <a href="javascript:void()" v="16" class="" aid="98373b1b-201c-4753-b540-14bb1cd6564e">上海(郊区)</a>
+                            <a href="javascript:void()" v="4" class="" aid="df2e0859-ed44-4e81-95a5-1c8b59381b99">绍兴市</a>
+                            <a href="javascript:void()" v="4" class="" aid="7e8111e6-d7ce-41ce-a660-3033ab81705c">宿迁市</a>
+                            <a href="javascript:void()" v="32" class="" aid="191a03f0-5acf-4bba-8d79-551fa80f77c2">沈阳市</a>
+                            <a href="javascript:void()" v="128" class="hot" aid="dec5b754-fe58-48d6-8b37-6bc91ee08460">苏州市</a>
+                            <a href="javascript:void()" v="1" class="hot" aid="312d0556-0671-4f2e-8bac-7b8873b5a03a">上海</a>
+                            <a href="javascript:void()" v="256" class="" aid="28eab84c-07bf-439f-bb96-92274545c77b">石家庄市</a>
+                            <a href="javascript:void()" v="512" class="hot" aid="0540d74e-0ffb-4a3a-ab79-ec590dd49947">深圳市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>T</dt>
+                    <dd>
+                            <a href="javascript:void()" v="32" class="" aid="17ee7ac2-d7ce-4c02-80ea-1babea0a8933">唐山市</a>
+                            <a href="javascript:void()" v="32" class="" aid="245dccf7-34cb-466f-aa68-45a242927e18">太原市</a>
+                            <a href="javascript:void()" v="4" class="" aid="5fddc946-9a0c-4dad-bc92-5e05aa5658cd">台州市</a>
+                            <a href="javascript:void()" v="32" class="" aid="63ae9bcf-002f-4514-b052-66702274b1c7">泰安市</a>
+                            <a href="javascript:void()" v="8" class="hot" aid="93570b8c-0a0a-4818-8317-75a0d14093a5">天津</a>
+                            <a href="javascript:void()" v="16" class="" aid="0d920097-3f8a-4ac5-8d48-c7ba7b344ab3">桐乡市</a>
+                            <a href="javascript:void()" v="4" class="" aid="6ba21255-37f7-4619-859c-fde2bb914c4c">泰州市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>W</dt>
+                    <dd>
+                            <a href="javascript:void()" v="32" class="" aid="556550b5-ea16-4b86-9ecd-1b66d20b297b">潍坊市</a>
+                            <a href="javascript:void()" v="16" class="" aid="3a5c6df3-9ca1-41a8-bc9c-453050bb7897">武汉市</a>
+                            <a href="javascript:void()" v="32" class="" aid="08727bb1-22ea-40ca-81f9-7dc9b0fcabd0">威海市</a>
+                            <a href="javascript:void()" v="4" class="" aid="734d3328-587c-4b16-bddc-9c8682e76ea5">温州市</a>
+                            <a href="javascript:void()" v="128" class="hot" aid="361bc174-b1e5-4fb6-8f69-c391dcd92644">无锡市</a>
+                            <a href="javascript:void()" v="4" class="" aid="33b3203d-c4b6-4c91-abd0-f3f0a226e461">吴江市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>X</dt>
+                    <dd>
+                            <a href="javascript:void()" v="16" class="" aid="9a2b3612-8529-4ddf-86bd-60b7a46444a7">西安市</a>
+                            <a href="javascript:void()" v="4" class="" aid="95e8ce6d-2c7e-4364-9b66-8903c1afd338">徐州市</a>
+                            <a href="javascript:void()" v="16" class="" aid="146a4ea1-7ba2-4e0b-bf92-a56ddc2d4eb2">厦门市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Y</dt>
+                    <dd>
+                            <a href="javascript:void()" v="4" class="" aid="3ed942ac-0504-479b-8808-4d9ca08df39b">扬州市</a>
+                            <a href="javascript:void()" v="4" class="" aid="36ccf429-efe3-4192-9530-6fbee4984621">盐城市</a>
+                            <a href="javascript:void()" v="32" class="" aid="7d381d70-fc5a-4d1c-8dd0-9400fd5280fd">烟台市</a>
+                            <a href="javascript:void()" v="4" class="" aid="6b804583-e3d5-47d5-8bc5-a6a1f46a4cf8">余姚市</a>
+                            <a href="javascript:void()" v="4" class="" aid="c9d4fe94-a93a-4382-bf3f-acc16233a71d">义乌市</a>
+                            <a href="javascript:void()" v="32" class="" aid="d1c0ada7-06b3-4d53-8f91-ccdc9f61d9ba">银川市</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Z</dt>
+                    <dd>
+                            <a href="javascript:void()" v="16" class="" aid="2aac03c9-daf1-4aa8-9505-0bc169742e8a">郑州市</a>
+                            <a href="javascript:void()" v="512" class="hot" aid="0718b3bf-b99b-4aa4-97bd-4a4da0b92464">珠海市</a>
+                            <a href="javascript:void()" v="32" class="" aid="b07704cf-41a9-4997-8ac4-7e739d7e978a">枣庄市</a>
+                            <a href="javascript:void()" v="32" class="" aid="9e21dcb6-47fa-42f8-89c3-9216ba489f1e">淄博市</a>
+                            <a href="javascript:void()" v="512" class="hot" aid="29bd9fa7-274c-4257-85e2-a22e2cd1d2ce">中山市</a>
+                            <a href="javascript:void()" v="4" class="" aid="04d2148e-5d5a-4372-a8a1-ad6fd9756b2b">舟山市</a>
+                            <a href="javascript:void()" v="4" class="" aid="26b6f9a2-850b-4cab-be30-d62e6221dab9">镇江市</a>
+                            <a href="javascript:void()" v="512" class="hot" aid="49c234d6-d1c7-4b9d-be06-e2ebd08e4618">肇庆市</a>
+                    </dd>
+                </dl>
+        </div>
+    </div>
+    </div>
+                    <a class="on-shopping" href="http://www.yiguo.com">继续购物 &gt; &gt;</a>
+                </h2>
+                <div class="cart-alert">
+                    <div class="cart-header">
+                        <table class="cart-table">
+                            <tbody>
+                                <tr>
+                                    <th class="cart-t-check"><label><input checked="checked" class="chkAll" type="checkbox">全选</label></th>
+                                    <th class="cart-t-info">商品信息</th>
+                                    <th class="cart-t-ub" style="width:75px;">悠币</th>
+                                    <th class="cart-t-price">单价</th>
+                                    <th class="cart-t-num">购买数量</th>
+                                    <th class="cart-t-total">合计</th>
+                                    <th class="cart-t-spec">规格</th>
+                                    <th class="cart-t-opera">操作</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                        <div class="cart-list" id="theInsulationCan">
+
+
+
+                <table class="cart-table">
+                    <tbody>
+                        <tr>
+                            <td class="cart-t-check"><input checked="checked" comid="1a8eea5f-637b-409a-80d1-3b4c1cb84249|1" type="checkbox"></td>
+                            <td class="cart-t-img"><a href="http://www.yiguo.com/product/11522.html"><img src="http://img11.yiguoimg.com/e/items/2016/160422/9288693651677334_300.jpg"></a></td>
+                            <td class="cart-t-info"><a href="http://www.yiguo.com/product/11522.html">美国加州樱桃500g果径约26.5mm</a></td>
+                            <td class="cart-t-ub" style="width:75px;"></td>
+                            <td class="cart-t-price">￥59.00</td>
+                                <td class="cart-t-num">
+                                    <div class="quantity-form">
+                                        <a href="javascript:void(0);" class="decrement" onclick="G.app.CartController.alterInShopCart('1a8eea5f-637b-409a-80d1-3b4c1cb84249|1', '-')"></a>
+                                        <input id="1a8eea5f-637b-409a-80d1-3b4c1cb84249|1" class="itxt" oldnum="1" value="1" onblur="G.app.CartController.alterInShopCart('1a8eea5f-637b-409a-80d1-3b4c1cb84249|1',this)" type="text">
+                                        <a href="javascript:void(0);" class="increment" onclick="G.app.CartController.alterInShopCart('1a8eea5f-637b-409a-80d1-3b4c1cb84249|1', '+')"></a>
+                                    </div>
+                                </td>
+                            <td class="cart-t-total">￥<span>59.00</span></td>
+                            <td class="cart-t-spec">500g/组</td>
+                            <td class="cart-t-opera">
+                                <a href="javascript:void(0);" onclick="G.app.cart.module.addToFavor('1a8eea5f-637b-409a-80d1-3b4c1cb84249')">移入收藏</a>
+                                <br>
+                                <a href="javascript:void(0);" onclick="G.app.CartController.deleteInShopCart('1a8eea5f-637b-409a-80d1-3b4c1cb84249|1')">删除</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <table class="cart-table">
+                    <tbody>
+                        <tr>
+                            <td class="cart-t-check"><input checked="checked" comid="a71c1d48-e9a9-43a7-85d1-c8c32cee40b0|1" type="checkbox"></td>
+                            <td class="cart-t-img"><a href="http://www.yiguo.com/product/40449.html"><img src="http://img12.yiguoimg.com/e/items/2016/160422/9288693652070550_300.jpg"></a></td>
+                            <td class="cart-t-info"><a href="http://www.yiguo.com/product/40449.html">美国加州樱桃1kg果径约26.5mm</a></td>
+                            <td class="cart-t-ub" style="width:75px;"></td>
+                            <td class="cart-t-price">￥109.00</td>
+                                <td class="cart-t-num">
+                                    <div class="quantity-form">
+                                        <a href="javascript:void(0);" class="decrement" onclick="G.app.CartController.alterInShopCart('a71c1d48-e9a9-43a7-85d1-c8c32cee40b0|1', '-')"></a>
+                                        <input id="a71c1d48-e9a9-43a7-85d1-c8c32cee40b0|1" class="itxt" oldnum="1" value="1" onblur="G.app.CartController.alterInShopCart('a71c1d48-e9a9-43a7-85d1-c8c32cee40b0|1',this)" type="text">
+                                        <a href="javascript:void(0);" class="increment" onclick="G.app.CartController.alterInShopCart('a71c1d48-e9a9-43a7-85d1-c8c32cee40b0|1', '+')"></a>
+                                    </div>
+                                </td>
+                            <td class="cart-t-total">￥<span>109.00</span></td>
+                            <td class="cart-t-spec">1kg/组</td>
+                            <td class="cart-t-opera">
+                                <a href="javascript:void(0);" onclick="G.app.cart.module.addToFavor('a71c1d48-e9a9-43a7-85d1-c8c32cee40b0')">移入收藏</a>
+                                <br>
+                                <a href="javascript:void(0);" onclick="G.app.CartController.deleteInShopCart('a71c1d48-e9a9-43a7-85d1-c8c32cee40b0|1')">删除</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+    <div id="theCart" style="display:none;">
+        <span id="theTotalUB">0</span>
+        <span id="theTotalPrice">168.00</span>
+    </div>
+
+                        </div>
+                        <!--选择保温箱-->
+                    <div class="cart-slct-box">
+                    </div>
+                        <div class="settle-space"></div>
+                        <div class="cart-footer clearfix settle">
+                            <div class="wrap">
+                                <div class="fl">
+                                    <label><input checked="checked" class="chkAll" type="checkbox">全选</label>
+                                    <a href="###" onclick="G.app.CartController.RemoveMultiCommodity()"><i></i>删除选中的商品</a>
+                                    <a href="###" onclick="G.app.CartController.ClearAll()">清空购物车</a>
+                                </div>
+                                <div class="fr">
+                                    
+                                        <span class="ub">悠币：<em>0</em>个</span>
+                                        <span class="fs14">总价：<em>￥<span>168.00</span></em></span>
+                                        <input id="SelectedCommIds" name="SelectedCommIds" value="" type="hidden">
+                                        
+                                        <a href="###" class="btn" id="btnSubmit" name="btnSubmit" style="cursor:pointer;">去结算</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <!--特惠换购-->
+            <div class="preferential-buy">
+
+
+        <h3><i></i>特惠换购<a id="changePage" href="###"><i></i>换一批</a></h3>
+        <div style="display:none;">
+            <span id="currPage">1</span>
+            <span id="totalPage">2</span>
+        </div>
+        <ul>
+                <li class="product">
+                    <div class="p-img"><a href="http://www.yiguo.com/product/1000769.html"><img src="http://img14.yiguoimg.com/e/items/2015/151216/9288691121233808_300.jpg" height="90" width="90"></a></div>
+                    <div class="p-info">
+                        <div class="p-name"><a href="http://www.yiguo.com/product/1000769.html">新疆雪域一级骏枣450g X 1</a></div>
+                            <div class="p-price">
+                                <span><strong><b>￥</b>26.00</strong>/袋</span>
+                                <del>￥39.00</del>
+                            </div>
+                            <div class="p-hg"><a href="###" onclick="G.app.CartController.AddHg('38687ea9-6a17-4700-851c-6ef5d64ae67e')">换购</a></div>
+                        </div>
+                    </li>
+                <li class="product">
+                    <div class="p-img"><a href="http://www.yiguo.com/product/1003634.html"><img src="http://img11.yiguoimg.com/e/items/2016/160414/9288693466341518_300.jpg" height="90" width="90"></a></div>
+                    <div class="p-info">
+                        <div class="p-name"><a href="http://www.yiguo.com/product/1003634.html">五芳斋情系五芳礼品粽1.4kg X 1</a></div>
+                            <div class="p-price">
+                                <span><strong><b>￥</b>86.00</strong>/盒</span>
+                                <del>￥89.00</del>
+                            </div>
+                            <div class="p-hg"><a href="###" onclick="G.app.CartController.AddHg('8826a1db-ce08-4b36-a860-f8a26e957201')">换购</a></div>
+                        </div>
+                    </li>
+                <li class="product">
+                    <div class="p-img"><a href="http://www.yiguo.com/product/1003633.html"><img src="http://img11.yiguoimg.com/e/items/2016/160418/9288693524144274_300.jpg" height="90" width="90"></a></div>
+                    <div class="p-info">
+                        <div class="p-name"><a href="http://www.yiguo.com/product/1003633.html">五芳斋真空鲜肉粽100g*2 X 1</a></div>
+                            <div class="p-price">
+                                <span><strong><b>￥</b>9.00</strong>/袋</span>
+                                <del>￥9.00</del>
+                            </div>
+                            <div class="p-hg"><a href="###" onclick="G.app.CartController.AddHg('261f7d20-a898-41e1-8da4-fb7175cdc25f')">换购</a></div>
+                        </div>
+                    </li>
+                <li class="product">
+                    <div class="p-img"><a href="http://www.yiguo.com/product/107462.html"><img src="http://img06.yiguoimg.com/e/web/151010/133323/151010133323262_107462_300.jpg" height="90" width="90"></a></div>
+                    <div class="p-info">
+                        <div class="p-name"><a href="http://www.yiguo.com/product/107462.html">信洲有机香菇（花冬菇）100g X 1</a></div>
+                            <div class="p-price">
+                                <span><strong><b>￥</b>32.00</strong>/盒</span>
+                                <del>￥48.00</del>
+                            </div>
+                            <div class="p-hg"><a href="###" onclick="G.app.CartController.AddHg('451f2c80-91a0-4581-bc00-65f7345e3cd6')">换购</a></div>
+                        </div>
+                    </li>
+                <li class="product">
+                    <div class="p-img"><a href="http://www.yiguo.com/product/107421.html"><img src="http://img08.yiguoimg.com/e/web/151010/141149/151010141149918_107421_300.jpg" height="90" width="90"></a></div>
+                    <div class="p-info">
+                        <div class="p-name"><a href="http://www.yiguo.com/product/107421.html">实谷园压缩有机黑木耳200g X 1</a></div>
+                            <div class="p-price">
+                                <span><strong><b>￥</b>42.00</strong>/袋</span>
+                                <del>￥72.00</del>
+                            </div>
+                            <div class="p-hg"><a href="###" onclick="G.app.CartController.AddHg('e7f295cb-1393-43ac-a457-da8893eb524d')">换购</a></div>
+                        </div>
+                    </li>
+                <li class="product">
+                    <div class="p-img"><a href="http://www.yiguo.com/product/107464.html"><img src="http://img05.yiguoimg.com/e/web/151010/133329/151010133329213_107464_300.jpg" height="90" width="90"></a></div>
+                    <div class="p-info">
+                        <div class="p-name"><a href="http://www.yiguo.com/product/107464.html">信洲有机鸡腿菇100g X 1</a></div>
+                            <div class="p-price">
+                                <span><strong><b>￥</b>29.00</strong>/盒</span>
+                                <del>￥45.00</del>
+                            </div>
+                            <div class="p-hg"><a href="###" onclick="G.app.CartController.AddHg('60eec809-1e39-4140-a75a-f26cba6392ac')">换购</a></div>
+                        </div>
+                    </li>
+                <li class="product">
+                    <div class="p-img"><a href="http://www.yiguo.com/product/1003405.html"><img src="http://img12.yiguoimg.com/e/items/2016/160407/9288693313511559_300.jpg" height="90" width="90"></a></div>
+                    <div class="p-info">
+                        <div class="p-name"><a href="http://www.yiguo.com/product/1003405.html">真真老老速冻赤豆蜜枣粽420g（3只） X 1</a></div>
+                            <div class="p-price">
+                                <span><strong><b>￥</b>10.50</strong>/袋</span>
+                                <del>￥10.50</del>
+                            </div>
+                            <div class="p-hg"><a href="###" onclick="G.app.CartController.AddHg('60e06530-0e35-40f4-9ef2-dca83daf9513')">换购</a></div>
+                        </div>
+                    </li>
+                <li class="product">
+                    <div class="p-img"><a href="http://www.yiguo.com/product/11907.html"><img src="http://img13.yiguoimg.com/e/items/2016/160316/9288692939006064_300.jpg" height="90" width="90"></a></div>
+                    <div class="p-info">
+                        <div class="p-name"><a href="http://www.yiguo.com/product/11907.html">新西兰蜜梨10个约100g/个 X 1</a></div>
+                            <div class="p-price">
+                                <span><strong><b>￥</b>25.00</strong>/组</span>
+                                <del>￥38.00</del>
+                            </div>
+                            <div class="p-hg"><a href="###" onclick="G.app.CartController.AddHg('dca5611a-c295-4e68-bda9-e7d89b4635fb')">换购</a></div>
+                        </div>
+                    </li>
+        </ul>
+
+            </div>
+        </div>
+
+
+
+
+
+    <?php
+        }
+     ?>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </block>
+    <block name="foo">
+</block>
+    <block name="footer">
+    <!------- 页尾 ------->
+<div class="footer" style="border-top:1px solid #e0e0e0">
+    <div class="wrap">
+        <dl class="col1">
+            <dt>新手指南</dt>
+            <dd>
+                <p><a href="http://www.yiguo.com/help/registersteps.html">账户注册</a></p>
+                <p><a href="http://www.yiguo.com/help/gouwuliucheng.html">购物流程</a></p>
+                <p><a href="http://www.yiguo.com/help/ordering.html">订购方式</a></p>
+                <p><a href="http://www.yiguo.com/help/ubremark.html">悠币说明</a></p>
+                <p><a href="http://www.yiguo.com/activity_vip.html">会员等级</a></p>
+            </dd>
+        </dl>
+        <dl class="col2">
+            <dt>付款方式</dt>
+            <dd>
+                <p><a href="http://www.yiguo.com/help/payment.html">支付方式</a>/<a href="http://www.yiguo.com/help/invoiceremark.html">发票说明</a></p>
+                <p><a href="http://www.yiguo.com/help/chongzhiliucheng.html">充值说明</a><a href="http://www.yiguo.com/help/usechuzhika.html">/储值卡说明</a></p>
+                <p><a href="http://www.yiguo.com/help/usegiftcard.html">优惠代码/礼品卡说明</a></p>
+                <p><a href="http://www.yiguo.com/help/cardbuynotes.html">卡券购买章程</a></p>
+            </dd>
+        </dl>
+        <dl class="col3">
+            <dt>配送方式</dt>
+            <dd>
+                <p><a href="http://www.yiguo.com/help/sendyuefei.html">配送运费</a></p>
+                <p><a href="http://www.yiguo.com/help/sendquyu.html">配送范围</a></p>
+                <p><a href="http://www.yiguo.com/help/sendtime.html">配送时间</a></p>
+            </dd>
+        </dl>
+        <dl class="col4">
+            <dt>售后服务</dt>
+            <dd>
+                <p><a href="http://www.yiguo.com/help/tuihuanhuoshuoming.html">退换货政策</a></p>
+                <p><a href="http://www.yiguo.com/help/huanhuolc.html">退换货流程</a></p>
+                <p><a href="http://www.yiguo.com/help/qa.html">常见问题</a></p>
+                <p><a href="http://home.yiguo.com/Trade/Advice">投诉与建议</a></p>
+            </dd>
+        </dl>
+        <dl class="col5">
+            <dt>关于我们</dt>
+            <dd>
+                <p><a href="http://www.yiguo.com/help/introduction.html">公司介绍</a></p>
+                <p><a href="http://www.yiguo.com/help/contact.html">联系我们</a></p>
+                <p><a href="http://www.yiguo.com/help/procooperation.html">业务合作</a></p>
+                <p><a href="http://www.yiguo.com/help/chengxinjubao.html">诚信举报</a></p>
+                <p><a href="http://yiguo.zhiye.com/home" target="_blank" rel="nofollow">人才招聘</a></p>
+            </dd>
+        </dl>
+        <div class="service"><span>客服热线 400-000-7788</span><span>周一至周日 9:00-21:00</span></div>
+        <div class="copyright">
+            <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+            <p>沪ICP备09008015号 Copyright © 2005-2015 <a href="http://www.yiguo.com/">上海易果电子商务有限公司</a>版权所有</p>
+            <p class="authentication">
+                <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20110512114405424" target="_blank"><img src="__PUBLIC__/Home/Cart/Picture/footer_copy.gif" width="47px" height="47px"></a>
+                <a href="https://180.169.127.46:9090/?sn=310100102001">
+                    <img src="__PUBLIC__/Home/Cart/Picture/picp_bg.png" height="47" alt="»¦¹«θ±¸" border="0">
+                    <span>310100102001</span>
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <script src="__PUBLIC__/Home/Cart/Scripts/jquery.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/Cart/Scripts/global-v2.js"></script>
+    <!--IE6png兼容-->
+    <!--[if IE 6]>
+    <script src="__PUBLIC__/Home/Cart/Scripts/dd_belatedpng.js"></script>
+    <script src="__PUBLIC__/Home/Cart/Scripts/ie6png.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="__PUBLIC__/Home/Cart/Scripts/tab.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/Cart/Scripts/cartcontroller.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            //选择城市
+            $('.city').hover(function(){
+                $(this).addClass('current');
+            },function(){
+                $(this).removeClass('current');
+            });
+    
+            //手机易果
+            $('.mobile').hover(function(){
+                $(this).addClass('current');
+            },function(){
+                $(this).removeClass('current');
+            }); 
+
+
+        //我的易果
+        $('.myyiguo').hover(function(){
+            $(this).addClass('current');
+        },function(){
+            $(this).removeClass('current');
+        });
+
+        $(".cart-slct-box .chk input").click(
+            function(){
+                $("#insulationCan").toggle();    
+            }
+        );
+        var sExchangeBuy=$(".preferential-buy").html();
+        if($.trim(sExchangeBuy)=="")
+        {
+            $(".preferential-buy").hide()
+        }else{
+            $(".preferential-buy").html(sExchangeBuy);
+        }
+
+        //换一批
+        $("#changePage").live("click",function () {
+            var currPage = parseInt($("#currPage").html());
+            currPage=currPage +1;
+            var totalPage = $("#totalPage").html();
+            if(parseInt(totalPage)<=1){
+                $("#changePage").hide();
+            }else{
+                $("#changePage").show();
+            }
+            if(currPage>totalPage){
+                currPage=1;
+            }
+            var totalPrice=0.00;
+            $.get("/ShopCart/ExchangeBuy","totalPrice="+totalPrice+"&pageIndex="+currPage+"&datestamp="+new Date().getTime(),function(data){
+                if($.trim(data)=="")
+                {
+                    $(".preferential-buy").hide()
+                }else{
+                    $(".preferential-buy").html(data);
+                }
+            })
+        });
+        //login popout
+        $(".p-login .popout-con .title a.close").click(function(){
+            $(".p-login").hide();
+        });
+
+        $(".city-con a").click(function(){
+            var v = $(this).attr("v");
+            var areaid = $(this).attr("aid");
+            var name = $.trim($(this).text());
+            if (v != "" && v != undefined) {
+                $.ajax({
+                    url: "/AjaxCart/SetAreaCookie?cityid=" + v + "&cityname=" + encodeURIComponent(name) + "&areaid=" + encodeURIComponent(areaid) + "&r=" + Math.random(),
+                    success: function (data) {
+                        if(data=="1"){
+                            window.location.reload(true);
+                        }
+                    }
+                });
+            }
+        });
+
+    });
+    //适应分辨率
+    var screenWidth = window.screen.width;
+    if (screenWidth < 1300) {
+        document.write()
+        $('.w').addClass('w1280');
+    }
+    //结算样式浮动
+    $(window).scroll(scrollSettle);
+    scrollSettle();
+    function scrollSettle() {
+        var spaceTop = $('.settle-space').offset().top,
+            scrollTop = $(window).scrollTop(),
+            windowHeight = $(window).height(),
+            elementTop = spaceTop - windowHeight;
+        if (elementTop < scrollTop) {
+            $('.settle').removeClass('settle-fixed');
+        }
+        else {
+            $('.settle').addClass('settle-fixed');
+        }
+    }
+
+    
+    
+    </script>
+<script type="text/javascript">
+
+    var productids = new Array();
+    var products = $(".cart-list tr .cart-t-img a");
+    $.each(products, function (index, item) {
+        if (index < 10) {
+            var link = $(item).attr("href");
+            var id = link.substring(link.lastIndexOf('/') + 1, link.lastIndexOf('.'));
+            productids.push(id);
+        }
+    })
+
+    window.__zp_tag_params = {
+        pagetype:"cart",
+        status: (productids.length > 0 && productids[0] != "") ? 1 : 0,
+        productID_list:productids
+    };
+</script>
+
+
+    <script type="text/javascript">
+    $(function () {
+
+        y = new Date()
+        diff = y.getTime() - yg_x.getTime();
+        var Tags = (diff / 1000);
+        var pageurl = window.location.href;
+        var referrerurl = document.referrer;
+        var extData = "";
+        if ("undefined" != typeof pageTag) {
+            extData = "&categoryid=" + pageTag + "&behavior=0";
+            if (uniqueRate) {
+                extData += "&behaviorid=" + uniqueRate;
+            }
+        }
+        $.getJSON(httpUrlOneStats + '/Ajax/YGAnalytics.ashx?operate=view&site=Cart' + extData + '&pageurl=' + encodeURIComponent(pageurl) + '&referrerurl=' + encodeURIComponent(referrerurl) + "&Tags=" + Tags + "&datestamp=" + new Date().getTime() + "&jsoncallback=?");
+    });
+    </script>
+
+    <script src="__PUBLIC__/Home/Cart/Scripts/common.js"></script>
+    <script src="__PUBLIC__/Home/Cart/Scripts/stats.js"></script>
+
+    </block>
